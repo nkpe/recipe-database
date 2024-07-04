@@ -23,3 +23,4 @@ An application to store recipes in a NoSQL database that can be queried to find 
 
 * Java
 * Gradle
+* MongoDB Atlas
