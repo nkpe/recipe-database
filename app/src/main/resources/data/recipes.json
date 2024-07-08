@@ -1,0 +1,35 @@
+[
+    {
+        "recipe-title": "Chicken and Sweet Potato Bake",
+        "ingredients": [
+            "chicken",
+            "broccoli",
+            "red onion",        
+            "sweet potato"
+        ],
+        "total-time": 60,
+        "prep-time": 15
+    },
+    {
+        "recipe-title": "Creamy Chicken Pasta",
+        "ingredients": [
+            "pasta",
+            "olive oil",
+            "cheese",
+            "chicken"
+        ],
+        "total-time": 25,
+        "prep-time": 10
+    },
+    {
+        "recipe-title": "Teriyaki Pork",
+        "ingredients": [
+            "rice",
+            "sesame oil",
+            "soy sauce",
+            "pork"
+        ],
+        "total-time": 25,
+        "prep-time": 10
+    }
+]
