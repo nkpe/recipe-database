@@ -6,7 +6,7 @@ package recipefinder;
 public class App {
     public String getGreeting() {
         Connect.connect();
-        // InsertData.insertData();
+        InsertData.insertData();
         return "RecipeFinder is running!";
     }
 

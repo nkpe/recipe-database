@@ -30,7 +30,8 @@ public class Connect {
                 
         // Create a new client and connect to the server
         try (MongoClient mongoClient = MongoClients.create(settings)) {
-            MongoDatabase database = mongoClient.getDatabase("admin");
+            MongoDatabase database = mongoClient.getDatabase("recipeJSON");
+            System.out.println("DATABASE CONNECT: " + database);
             try {
                 // Send a ping to confirm a successful connection
                 Bson command = new BsonDocument("ping", new BsonInt64(1));
