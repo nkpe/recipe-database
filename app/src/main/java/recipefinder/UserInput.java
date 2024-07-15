@@ -13,5 +13,4 @@ public class UserInput {
         scanner.close();
         return input;
     }
-
 }

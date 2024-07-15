@@ -28,10 +28,6 @@ public class Database {
     private MongoClient mongoClient;
     private MongoCollection<Document> recipeJSON;
 
-    public Database() {
-
-    }
-
     public void connect() {
         Dotenv dotenv = Dotenv.load();
         String uri = dotenv.get("MONGODB_URI");
@@ -52,7 +48,7 @@ public class Database {
     }
 
     public void insertData() {
-        if(mongoClient == null || database == null){
+        if (mongoClient == null || database == null) {
             System.out.println("Database not connected");
             return;
         }
@@ -67,22 +63,33 @@ public class Database {
         }
     }
 
-    public void queryIngredients(String ingredient) {
-        System.out.println("QUERY INGREDIENTS INIT");
-        if(mongoClient == null || database == null) {
+    private <T> MongoCursor<Document> queryDataBaseGeneric(String fieldName, T value) {
+        if (mongoClient == null || database == null) {
             System.out.println("Database not connected");
-            return;
+            return null;
         }
-        
 
-        FindIterable<Document> results = recipeJSON.find(eq("ingredients", ingredient));
+        FindIterable<Document> results = recipeJSON.find(eq(fieldName, value));
 
         MongoCursor<Document> cursor = results.iterator();
+
+        return cursor;
+    }
+
+    private MongoCursor<Document> queryDataBase(String fieldName, String value) {
+        return queryDataBaseGeneric(fieldName, value);
+    }
+
+    private MongoCursor<Document> queryDataBase(String fieldName, Integer value) {
+        return queryDataBaseGeneric(fieldName, value);
+    }
+
+    public void queryByIngredient(String ingredient) {
+        MongoCursor<Document> cursor = queryDataBase("ingredients", ingredient);
 
         if (cursor.hasNext()) {
             Document document = cursor.next();
             Set<Entry<String, Object>> entrySet = document.entrySet();
-            // entry.forEach((key, value) -> System.out.println(key + " : " + value));
 
             entrySet.forEach((entry) -> {
                 System.out.println("ENTRIES" + entry.getKey() + " : " + entry.getValue().toString());

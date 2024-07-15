@@ -13,10 +13,10 @@ public class App {
         UserInput userInput = new UserInput();
         String ingredientInput = userInput.userInput("Enter one ingredient");
         
-        database.queryIngredients(ingredientInput);
+        database.queryByIngredient(ingredientInput);
     
         // InsertData is commented out to stop duplicate recipes from recipes.json
         // InsertData.insertData();
         System.out.println(new App());
-    }
+    };
 }
