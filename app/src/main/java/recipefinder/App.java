@@ -9,7 +9,7 @@ public class App {
         database.connect();
         // !!! Insert Data will should only be run once to populate JSON in DB !!!
         // database.insertData();
-        database.queryIngredients();
+        database.queryIngredients("chicken");
     
         // InsertData is commented out to stop duplicate recipes from recipes.json
         // InsertData.insertData();

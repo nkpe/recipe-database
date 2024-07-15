@@ -70,7 +70,7 @@ public class Database {
         }
     }
 
-    public void queryIngredients() {
+    public void queryIngredients(String ingredient) {
         System.out.println("QUERY INGREDIENTS INIT");
         if(mongoClient == null || database == null) {
             System.out.println("Database not connected");
@@ -78,7 +78,7 @@ public class Database {
         }
         
 
-        FindIterable<Document> results = recipeJSON.find(eq("ingredients", "chicken"));
+        FindIterable<Document> results = recipeJSON.find(eq("ingredients", ingredient));
 
         MongoCursor<Document> cursor = results.iterator();
 
@@ -90,7 +90,6 @@ public class Database {
             entrySet.forEach((entry) -> {
                 System.out.println("ENTRIES" + entry.getKey() + " : " + entry.getValue().toString());
             });
-
             // return entry;
         } else {
             // return null;
