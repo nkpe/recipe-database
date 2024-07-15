@@ -3,6 +3,6 @@
         "recipefinder"
     ],
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
     "java.format.settings.url": ".vscode/java-formatter.xml"
 }

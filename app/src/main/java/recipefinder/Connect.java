@@ -15,7 +15,12 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.ServerApi;
 
 public class Connect {
-    public static void connect() {
+
+    public static void connection() {
+        
+    }
+
+    public static void connectTest() {
         Dotenv dotenv = Dotenv.load();
         String uri = dotenv.get("MONGODB_URI");
 
