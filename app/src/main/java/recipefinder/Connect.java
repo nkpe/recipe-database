@@ -1,7 +1,6 @@
 package recipefinder;
 
 import io.github.cdimascio.dotenv.Dotenv;
-import io.github.cdimascio.dotenv.DotenvException;
 
 import com.mongodb.*;
 import org.bson.BsonDocument;

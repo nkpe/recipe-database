@@ -1,11 +1,8 @@
 package recipefinder;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-
-import javax.print.Doc;
 
 import org.bson.Document;
 
