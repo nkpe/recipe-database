@@ -10,7 +10,10 @@ public class App {
 
         // !!! Insert Data will should only be run once to populate JSON in DB !!!
         // database.insertData();
-        database.queryIngredients("chicken");
+        UserInput userInput = new UserInput();
+        String ingredientInput = userInput.userInput("Enter one ingredient");
+        
+        database.queryIngredients(ingredientInput);
     
         // InsertData is commented out to stop duplicate recipes from recipes.json
         // InsertData.insertData();
