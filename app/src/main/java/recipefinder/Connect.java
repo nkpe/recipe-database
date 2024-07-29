@@ -1,7 +1,6 @@
 package recipefinder;
 
 import io.github.cdimascio.dotenv.Dotenv;
-import io.github.cdimascio.dotenv.DotenvException;
 
 import com.mongodb.*;
 import org.bson.BsonDocument;
@@ -15,7 +14,12 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.ServerApi;
 
 public class Connect {
-    public static void connect() {
+
+    public static void connection() {
+        
+    }
+
+    public static void connectTest() {
         Dotenv dotenv = Dotenv.load();
         String uri = dotenv.get("MONGODB_URI");
 
