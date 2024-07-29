@@ -17,6 +17,6 @@ public class App {
     
         // InsertData is commented out to stop duplicate recipes from recipes.json
         // InsertData.insertData();
-        System.out.println(new App());
+        // System.out.println(new App());
     };
 }

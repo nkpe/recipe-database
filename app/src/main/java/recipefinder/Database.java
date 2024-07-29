@@ -1,5 +1,6 @@
 package recipefinder;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -21,6 +22,7 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.result.InsertManyResult;
 
 import io.github.cdimascio.dotenv.Dotenv;
+import recipefinder.Recipe.Recipe;
 
 // Manage DB & Client
 public class Database {
@@ -80,7 +82,7 @@ public class Database {
         return queryDataBaseGeneric(fieldName, value);
     }
 
-    private MongoCursor<Document> queryDataBase(String fieldName, Integer value) {
+    private MongoCursor<Document> queryDataBase(String fieldName, int value) {
         return queryDataBaseGeneric(fieldName, value);
     }
 
@@ -90,16 +92,29 @@ public class Database {
         if (cursor.hasNext()) {
             Document document = cursor.next();
             Set<Entry<String, Object>> entrySet = document.entrySet();
+            HashMap<String, Object> recipesReturned = new HashMap<String, Object>();
 
+            System.out.println("Here is matching recipes: ");
+
+            // covert from Entry Set to Map
             entrySet.forEach((entry) -> {
-                System.out.println("ENTRIES" + entry.getKey() + " : " + entry.getValue().toString());
+                recipesReturned.put(entry.getKey(), entry.getValue());
             });
-            // return entry;
+            
+            Recipe recipe = convertToRecipeClass(recipesReturned);
+            System.out.println(recipe.toString());
         } else {
-            // return null;
             System.out.println("NO ENTRIES");
         }
 
     }
 
+    private Recipe convertToRecipeClass (HashMap<String, Object> recipesReturned) {
+        String recipeTitle = recipesReturned.get("recipe-title").toString();
+        String ingredients = recipesReturned.get("ingredients").toString();
+        String totalTime = recipesReturned.get("total-time").toString();
+        String prepTime = recipesReturned.get("prep-time").toString();
+        Recipe r = new Recipe(recipeTitle, ingredients, totalTime, prepTime);
+        return r;
+    }
 }
