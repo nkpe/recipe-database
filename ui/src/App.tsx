@@ -1,11 +1,15 @@
-import "./App.css";
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import "./App.css";
+import { theme } from './theme';
 import Home from "./routes/Home";
+import Header from "./components/static/Header";
+
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path: "/",
     element: <Home />,
     // loader: rootLoader,
     // children: [
@@ -21,16 +25,18 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
-      <header>
-        <h1>Recipe Finder</h1>
-      </header>
-      <RouterProvider router={router} />
-      <footer>
-      Copyright 2024
-      </footer>
-    </>
-  );
+    <ThemeProvider theme={theme}>
+      <CssBaseline>
+        <Header />
+        <main>
+          <RouterProvider router={router} />
+        </main>
+        <footer>
+          Copyright 2024
+        </footer>
+      </CssBaseline>
+    </ThemeProvider>
+  )
 }
 
 export default App;
