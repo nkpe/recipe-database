@@ -1,5 +1,12 @@
-#root {
-    padding: 0;
-    max-width: none;
-    /* margin: 2rem; */
+main {
+    /* background-color: blue; */
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: var(--mui-palette-primary-main);
+    height: 7rem;
 }

@@ -1,10 +1,10 @@
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { Box, CssBaseline, Stack, ThemeProvider, alpha } from '@mui/material';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import "./App.css";
 import { theme } from './theme';
 import Home from "./routes/Home";
 import Header from "./components/static/Header";
+import Footer from './components/static/Footer';
 
 
 const router = createBrowserRouter([
@@ -27,13 +27,21 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline>
-        <Header />
-        <main>
-          <RouterProvider router={router} />
-        </main>
-        <footer>
-          Copyright 2024
-        </footer>
+        <Box sx={(theme) => ({
+          position: { sm: 'relative', md: '' },
+          height: "100dvh",
+          flexGrow: 1,
+          backgroundColor: alpha(theme.palette.background.default, 1),
+          overflow: 'auto',
+        })} >
+          <Stack direction="column" sx={{ height: "100%" }}>
+            <Header />
+            <Box component="main">
+              <RouterProvider router={router} />
+            </Box>
+            <Footer />
+          </Stack>
+        </Box>
       </CssBaseline>
     </ThemeProvider>
   )
