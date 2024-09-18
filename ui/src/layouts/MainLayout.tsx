@@ -6,6 +6,7 @@ import { FooterContent } from "../components/static/Footer";
 import { Routes } from "../routes/Routes";
 
 export const MainLayout = () => {
+    
     // const layoutStyle = {
     //     borderRadius: 8,
     //     overflow: "hidden",
@@ -15,8 +16,9 @@ export const MainLayout = () => {
     //   };
 
     return (
+        // <Layout style={layoutStyle}>
         <Layout>
-            <Header>
+            <Header style={{display: "flex", alignContent: "center"}}>
                 <HeaderContent />
             </Header>
 
