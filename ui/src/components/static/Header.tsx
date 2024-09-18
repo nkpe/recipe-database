@@ -1,5 +1,5 @@
-const Header = () => {
+export const HeaderContent = () => {
     return (
-        <header></header>
+        <header><h1>Recipe Finder</h1></header>
     )
 }

@@ -1,35 +1,13 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { MainLayout } from "./layouts/MainLayout";
 
-import Home from "./routes/Home";
-
-const router = createBrowserRouter([
-  {
-    path:"/",
-    element: <Home />,
-    // loader: rootLoader,
-    // children: [
-    //   {
-    //     path: "recipes",
-    //     element: <Recipes />,
-    //     // loader: recipeLoader,
-    //   }
-    // ],
-  },
-]);
+// import { Header } from "./components/static/Header";
+// import { Footer } from "./components/static/Footer";
 
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <header>
-        <h1>Recipe Finder</h1>
-      </header>
-      <RouterProvider router={router} />
-      <footer>
-      Copyright 2024
-      </footer>
-    </>
+    <MainLayout />
   );
 }
 
