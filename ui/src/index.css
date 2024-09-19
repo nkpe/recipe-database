@@ -12,8 +12,3 @@ main {
     align-items: center;
     gap: 2rem;
 }
-
-footer {
-    background-color: var(--mui-palette-primary-main);
-    height: 7rem;
-}
