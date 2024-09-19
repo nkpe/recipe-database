@@ -5,6 +5,7 @@ import { teal } from "@mui/material/colors";
 import Figtree from '@fontsource-variable/figtree/files/figtree-latin-wght-normal.woff2';
 
 export const theme = createTheme({
+    cssVariables: true,
     palette: {
         primary: teal,
     },
