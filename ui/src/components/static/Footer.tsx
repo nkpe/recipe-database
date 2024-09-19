@@ -1,6 +1,11 @@
 const Footer = () => {
+
+    const footerStyle = {
+        backgroundColor: 'var(--mui-palette-primary-main)'
+    }
+    
     return (
-        <footer>
+        <footer style={footerStyle}>
             <p>Copyright 2024</p>
         </footer>
     )
