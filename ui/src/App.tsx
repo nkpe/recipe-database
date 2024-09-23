@@ -29,7 +29,6 @@ function App() {
       <CssBaseline>
         <Box sx={(theme) => ({
           position: { sm: 'relative', md: '' },
-          height: "100dvh",
           flexGrow: 1,
           backgroundColor: alpha(theme.palette.background.default, 1),
           overflow: 'auto',
