@@ -13,10 +13,10 @@ const Home = () => {
     };
 
     return (
-        <Box id="homepage-container" className="flexBoxColumn" style={{backgroundColor: 'pink'}}>
-            <Typography variant="h3" component="h1">Welcome to Recipe Finder</Typography>
-            <Box component="aside" className="flexBoxColumn">
-                <FormControl sx={{ m: 1, minWidth: 500 }} size="medium">
+        <Box id="homepage-container" className="gridWrapper" style={{ backgroundColor: 'pink', paddingLeft: "25px", paddingRight: "25px"}}>
+            <Typography style={{gridColumn: "1 / 3"}} variant="h3" component="h1">Welcome to Recipe Finder</Typography>
+            <Box component="aside" style={{gridColumn:"1 / 3"}} >
+                <FormControl sx={{ m: 1, width: "100%" }} size="medium">
                 <InputLabel id="ingredient-search-select">Search by ingredient</InputLabel>
                     <Select 
                         id="ingredient-search" 
@@ -35,7 +35,7 @@ const Home = () => {
                 </FormControl>
             </Box>
 
-            <Box component="section" sx={{ height: "50%", width: "50%" ,overflowY: "scroll" }}>
+            <Box component="section" sx={{ width: "100%", overflowY: "scroll" }} style={{gridColumn:"4 / 9"}}>
                 <FeatureRecipes />
             </Box>
         </Box>

@@ -1,8 +1,17 @@
-main {
+body {
+    width: 100dvw;
+}
+
+#root {
+    width: 100%;
+}
+
+main { 
     /* min-height: 100dvh; */
     padding-top: 2rem;
     padding-bottom: 2rem;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 .flexBoxColumn {
@@ -10,4 +19,10 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+}
+
+.gridWrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    gap: 25px
 }
