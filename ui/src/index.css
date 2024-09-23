@@ -1,6 +1,5 @@
 main {
-    /* background-color: blue; */
-    height: 100%;
+    /* min-height: 100dvh; */
     padding-top: 2rem;
     padding-bottom: 2rem;
     box-sizing: border-box;

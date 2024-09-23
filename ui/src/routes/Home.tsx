@@ -1,9 +1,12 @@
 import { Box, Button, InputLabel, FormControl, MenuItem, Select, SelectChangeEvent, Typography } from '@mui/material';
 import { useState } from 'react';
 import { FeatureRecipes } from '../components/home/FeatureRecipes';
+import { capFirstLetter } from '../helpers/formatting';
 
 const Home = () => {
     const [ingredientItem, setIngredientItem] = useState("");
+
+    const ingredientDropDown = ["chicken", "pork", "pasta"];
 
     const handleChange = (event: SelectChangeEvent) => {
         setIngredientItem(event.target.value);
@@ -24,9 +27,9 @@ const Home = () => {
                         onChange={handleChange}
                         variant="standard"
                         style={{backgroundColor: 'turquoise'}}>
-                        <MenuItem value="chicken">Chicken</MenuItem>
-                        <MenuItem value="pork">Pork</MenuItem>
-                        <MenuItem value="cheese">Cheese</MenuItem>
+                        {ingredientDropDown.map((item) => (
+                            <MenuItem value={item}>{capFirstLetter(item)}</MenuItem>
+                        ))}
                     </Select>
                     <Button type="submit" variant="contained">Search</Button>
                 </FormControl>

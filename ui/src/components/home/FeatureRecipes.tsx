@@ -22,7 +22,7 @@ class Recipe {
     }
 }
 
-const chickenCurry = new Recipe("Chicken Curry", "./src/assets/recipe-imgs/curry-chicken.jpg", ["chicken", "curry"], "Chop and cook chicken, add to curry",[], ["dinner"]);
+const chickenCurry = new Recipe("Chicken Curry", "./src/assets/recipe-imgs/curry-chicken.jpg", ["chicken", "curry"], "Chop and cook chicken, add to curry", [], ["dinner"]);
 const pastaCarbonara = new Recipe("Pasta Carbonara", "./src/assets/recipe-imgs/pasta-carbonara.jpg", ["100g pancetta", "50g pecorino cheese", "50g parmesan", "3 large eggs", "350g spaghetti", "2 plump garlic cloves, peeled and left whole", "50g unsalted butter", "sea salt and freshly ground black pepper"], "make sauce, add pasta", ["milk", "lactose", "gluten"], ["dinner"]);
 const pastaPesto = new Recipe("Pesto Pasta", "./src/assets/recipe-imgs/pasta-pesto.jpg", [], "", ["gluten"], ["dinner", "lunch"]);
 const saladAdvoEgg = new Recipe("Advocado and Egg Salad", "./src/assets/recipe-imgs/salad-avocado-egg.jpg", [], "", [], ["dinner", "lunch"]);
@@ -45,7 +45,7 @@ export const FeatureRecipes = () => {
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             alt={item.name}
                             loading="lazy" />
-                    <ImageListItemBar position="below" title={item.name} />
+                        <ImageListItemBar position="below" title={item.name} />
                     </ImageListItem>
                 ))}
             </ImageList>
