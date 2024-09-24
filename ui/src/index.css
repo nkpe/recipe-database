@@ -23,6 +23,6 @@ main {
 
 .gridWrapper {
     display: grid;
-    grid-template-columns: repeat(8, 12.5%);
+    grid-template-columns: repeat(8, 1fr);
     gap: 25px
 }

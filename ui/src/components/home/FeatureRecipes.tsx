@@ -36,7 +36,7 @@ export const FeatureRecipes = () => {
 
     return (
         <>
-            <Typography variant="h2">Featured Recipes</Typography>
+            <Typography variant="h3">Featured Recipes</Typography>
             <ImageList variant="masonry" cols={3} gap={8}>
                 {recipes.map((item) => (
                     <ImageListItem key={item.img}>

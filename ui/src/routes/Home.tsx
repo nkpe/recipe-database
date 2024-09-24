@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <Box id="homepage-container" className="gridWrapper" style={{ backgroundColor: 'pink', paddingLeft: "25px", paddingRight: "25px"}}>
-            <Typography style={{gridColumn: "1 / 3"}} variant="h3" component="h1">Welcome to Recipe Finder</Typography>
+            <Typography style={{gridColumn: "span 8"}} variant="h3" component="h1">Welcome to Recipe Finder</Typography>
             <Box component="aside" style={{gridColumn:"1 / 3"}} >
                 <FormControl sx={{ m: 1, width: "100%" }} size="medium">
                 <InputLabel id="ingredient-search-select">Search by ingredient</InputLabel>
