@@ -13,7 +13,7 @@ const Home = () => {
     };
 
     return (
-        <Box id="homepage-container" className="gridWrapper" style={{ backgroundColor: 'pink', paddingLeft: "25px", paddingRight: "25px"}}>
+        <Box id="homepage-container" className="gridWrapper" style={{ paddingLeft: "25px", paddingRight: "25px"}}>
             <Typography align="center" style={{gridColumn: "span 8"}} variant="h2" component="h1">Welcome to Recipe Finder</Typography>
             <Box component="aside" style={{gridColumn:"1 / 3"}} >
                 <FormControl sx={{ m: 1, width: "100%" }} size="medium">
@@ -35,9 +35,7 @@ const Home = () => {
                 </FormControl>
             </Box>
 
-            <Box component="section" sx={{ width: "100%", overflowY: "scroll" }} style={{gridColumn:"4 / 9"}}>
-                <FeatureRecipes />
-            </Box>
+            <FeatureRecipes />
         </Box>
     )
 };

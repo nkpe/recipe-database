@@ -1,4 +1,4 @@
-import { ImageList, ImageListItem, ImageListItemBar, Typography } from "@mui/material";
+import { Box, ImageList, ImageListItem, ImageListItemBar, Typography } from "@mui/material";
 
 
 type AllergenCategory = "milk" | "lactose" | "gluten" | "shellfish";
@@ -35,7 +35,7 @@ export const FeatureRecipes = () => {
     const recipes = [chickenCurry, pastaCarbonara, pastaPesto, saladAdvoEgg, soupButternutSquash, tiramisu]
 
     return (
-        <>
+        <Box component="section" sx={{ height: "55%", width: "100%", overflowY: "scroll" }} style={{gridColumn:"4 / 9"}}>
             <Typography variant="h3">Featured Recipes</Typography>
             <ImageList  variant="masonry" cols={3} gap={8}>
                 {recipes.map((item) => (
@@ -49,6 +49,6 @@ export const FeatureRecipes = () => {
                     </ImageListItem>
                 ))}
             </ImageList>
-        </>
+        </Box>
     )
 }
