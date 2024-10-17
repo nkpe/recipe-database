@@ -27,15 +27,18 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline>
-        <Box sx={(theme) => ({
+        <Box className="app-box" sx={(theme) => ({
           position: { sm: 'relative', md: '' },
+          minHeight: "100vh",
           flexGrow: 1,
           backgroundColor: alpha(theme.palette.background.default, 1),
           overflow: 'auto',
         })} >
           <Stack direction="column" sx={{ height: "100%" }}>
             <Header />
-            <Box component="main">
+            <Box component="main" sx={(theme) =>({
+              minHeight: "calc(100vh + 64px)",
+            })}>
               <RouterProvider router={router} />
             </Box>
             <Footer />
