@@ -15,6 +15,16 @@ An application to store recipes in a NoSQL database that can be queried to find 
 
 ``` gradle run ```
 
+### Frontend 
+
+- ```cd ui```
+- ```npm run dev```
+
+### Backend
+
+- ```cd server```
+- ```gradlew run```
+
 ## Run all tests locally
 
 ``` gradle test ```

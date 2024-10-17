@@ -1,35 +1,82 @@
 [
     {
-        "recipe-title": "Chicken and Sweet Potato Bake",
-        "ingredients": [
-            "chicken",
-            "broccoli",
-            "red onion",        
-            "sweet potato"
-        ],
-        "total-time": 60,
+        "recipe-title": "Chicken and Sweet Potato Bake", 
+        "recipe-img": "./src/assets/recipe-imgs/chicken-sweet-potato-bake.jpg",
+        "ingredients": ["chicken breasts", "sweet potatoes", "olive oil", "rosemary", "garlic", "salt", "pepper"], 
+        "instructions": "Season chicken and sweet potatoes, bake until cooked.", 
+        "allergens": [], 
+        "mealCategories": ["dinner", "lunch"]
+      },
+      {
+        "recipe-title": "Creamy Chicken Pasta", 
+        "recipe-img": "./src/assets/recipe-imgs/creamy-chicken-pasta.jpg",
+        "ingredients": ["chicken breasts", "pasta", "cream", "Parmesan cheese", "garlic", "butter"], 
+        "instructions": "Cook pasta and chicken, mix with cream and Parmesan sauce.", 
+        "allergens": ["gluten", "dairy"], 
+        "mealCategories": ["dinner", "lunch"]
+      },
+      {
+        "recipe-title": "Teriyaki Pork", 
+        "recipe-img": "./src/assets/recipe-imgs/teriyaki-pork.jpg",
+        "ingredients": ["pork loin", "soy sauce", "ginger", "garlic", "brown sugar", "sesame oil"], 
+        "instructions": "Marinate pork in teriyaki sauce, grill or bake until cooked.", 
+        "allergens": ["soy"], 
+        "mealCategories": ["dinner", "lunch"]
+      },
+      {
+        "recipe-title": "Chicken Curry", 
+        "recipe-img": "./src/assets/recipe-imgs/chicken-curry.jpg",
+        "ingredients": ["chicken breasts", "coconut milk", "curry powder", "onions", "garlic", "ginger"], 
+        "instructions": "Cook chicken with curry spices, add coconut milk and simmer.", 
+        "allergens": [], 
+        "mealCategories": ["dinner", "lunch"]
+      },
+      {
+        "recipe-title": "Pasta Carbonara", 
+        "recipe-img": "./src/assets/recipe-imgs/pasta-carbonara.jpg",
+        "ingredients": ["pasta", "eggs", "Parmesan cheese", "bacon", "black pepper"], 
+        "instructions": "Cook pasta, mix with eggs, cheese, and bacon.", 
+        "allergens": ["gluten", "eggs", "dairy"], 
+        "mealCategories": ["dinner", "lunch"]
+      },
+    {
+        "recipe-title": "Pesto Pasta", 
+        "recipe-img": "./src/assets/recipe-imgs/pasta-pesto.jpg",
+        "ingredients": ["Pasta", "pesto", "Parmesan cheese"], 
+        "instructions": "Cook pasta, mix with pesto sauce, and garnish with Parmesan cheese.", 
+        "allergens":  ["gluten", "dairy", "nuts"], 
+        "mealCategories": ["dinner", "lunch"],
+        "total-time": 15,
+        "prep-time": 5
+    },
+    {
+        "recipe-title": "Avocado and Egg Salad", 
+        "recipe-img": "./src/assets/recipe-imgs/salad-avocado-egg.jpg",
+        "ingredients": ["Avocado", "eggs", "mixed greens", "olive oil", "salt", "pepper"], 
+        "instructions": "Boil eggs, chop avocado, mix with salad greens, and dress with olive oil.", 
+        "allergens": ["eggs"], 
+        "mealCategories": ["dinner", "lunch"],
+        "total-time": 20,
+        "prep-time": 10
+      },
+      {
+        "recipe-title": "Butternut Squash Soup", 
+        "recipe-img": "./src/assets/recipe-imgs/soup-butternutsquash.jpg",
+        "ingredients": ["Butternut squash", "vegetable broth", "onion", "garlic", "olive oil", "salt", "pepper"], 
+        "instructions": "Roast squash, blend with broth, and season with spices", 
+        "allergens": [], 
+        "mealCategories": ["dinner", "lunch"],
+        "total-time": 55,
         "prep-time": 15
-    },
-    {
-        "recipe-title": "Creamy Chicken Pasta",
-        "ingredients": [
-            "pasta",
-            "olive oil",
-            "cheese",
-            "chicken"
-        ],
-        "total-time": 25,
-        "prep-time": 10
-    },
-    {
-        "recipe-title": "Teriyaki Pork",
-        "ingredients": [
-            "rice",
-            "sesame oil",
-            "soy sauce",
-            "pork"
-        ],
-        "total-time": 25,
-        "prep-time": 10
-    }
+      },
+      {
+        "recipe-title": "Tiramisu", 
+        "recipe-img": "./src/assets/recipe-imgs/tiramisu.jpg",
+        "ingredients": ["Ladyfingers"," mascarpone cheese", "coffee", "eggs", "sugar", "cocoa powder"], 
+        "instructions": "Layer soaked ladyfingers with mascarpone cream, dust with cocoa powder.", 
+        "allergens": ["gluten", "milk", "lactose", "eggs"], 
+        "mealCategories": ["dessert"],
+        "total-time": 260,
+        "prep-time": 20
+      }
 ]
