@@ -16,6 +16,8 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
+import { Label } from "@/components/ui/label"
+
 
 const ingredientsList = [
     { key: "Chicken breasts", value: "chickenBreasts" },
@@ -59,19 +61,15 @@ export const IngredientSelect = () => {
 
     return (
         <Popover open={open} onOpenChange={setOpen}>
-            <PopoverTrigger asChild>
-                <Button
-                    variant="outline"
-                    role="combobox"
-                    aria-expanded={open}
-                    className="w-[200px] justify-between"
-                >
-                    {value
-                        ? ingredientsList.find((ingredient) => ingredient.value === value)?.key
-                        : "Select ingredient..."}
+
+            <PopoverTrigger>
+                <Label htmlFor="ingredient-select">Find by Ingredient</Label>
+                <Button id="ingredient-select" variant="outline" role="combobox" aria-expanded={open} className="w-[200px] justify-between">
+                    {value ? ingredientsList.find((ingredient) => ingredient.value === value)?.key : "Select ingredient..."}
                     <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
             </PopoverTrigger>
+
             <PopoverContent className="w-[200px] p-0">
                 <Command>
                     <CommandInput placeholder="Search ingredient..." />
@@ -79,16 +77,12 @@ export const IngredientSelect = () => {
                         <CommandEmpty>No ingredient found.</CommandEmpty>
                         <CommandGroup>
                             {ingredientsList.map((ingredient) => (
-                                <CommandItem
-                                    key={ingredient.value}
-                                    value={ingredient.value}
-                                    onSelect={(currentValue) => {
+                                <CommandItem key={ingredient.value} value={ingredient.value} onSelect={(currentValue) => {
                                         setValue(currentValue === value ? "" : currentValue)
                                         setOpen(false)
                                     }}
                                 >
-                                    <Check
-                                        className={cn(
+                                    <Check className={cn(
                                             "mr-2 h-4 w-4",
                                             value === ingredient.value ? "opacity-100" : "opacity-0"
                                         )}

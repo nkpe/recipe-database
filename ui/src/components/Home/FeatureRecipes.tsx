@@ -26,7 +26,7 @@ export const FeatureRecipes = () => {
             {/* CSS Grid on ScrollArea? */}
             <ScrollArea className="h-98 whitespace-nowrap rounded-md border-solid border-2 " >
                 <div className="flex w-max space-x-4 p-2">
-                    {imgSrcs.map((src) => {return <ImgCard src={src}></ImgCard>})}
+                    {imgSrcs.map((src, i) => {return <ImgCard src={src} key={i}></ImgCard>})}
                 </div>
                 <ScrollBar orientation="horizontal" />
             </ScrollArea>
