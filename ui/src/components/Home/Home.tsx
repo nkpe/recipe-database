@@ -1,5 +1,5 @@
-import { Aside } from "./Aside"
-import { FeatureRecipes } from "./FeatureRecipes"
+import { Aside } from "./Aside";
+import { FeatureRecipes } from "./FeatureRecipes";
 
 
 export const Home = () => {
