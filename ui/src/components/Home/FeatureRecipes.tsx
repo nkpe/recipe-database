@@ -21,7 +21,7 @@ const ImgCard = ({ src } :ImgProps ) => {
 
 export const FeatureRecipes = () => {
     return(
-        <div className="h-100 w-100 p-4 box-border" style={{backgroundColor: "darkgrey"}}>
+        <div className="h-100 w-100" style={{backgroundColor: "darkgrey"}}>
             <h1 style={{backgroundColor: "turquoise"}}>Feature Recipes</h1>
             {/* CSS Grid on ScrollArea? */}
             <ScrollArea className="h-98 whitespace-nowrap rounded-md border-solid border-2 " >
