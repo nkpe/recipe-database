@@ -19,7 +19,7 @@ const categories = [
 
 export const CategoryIcons = () => {
     return (
-        <div className="category-conatiner flex items-center flex-col gap-2">
+        <div className="category-container flex items-center flex-col gap-2">
             <Label htmlFor="category-select">Categories</Label>
             <div className="w-100 category-icons-wrapper flex flex-wrap gap-1" id="category-select">
                 {categories.map((cat) => {
