@@ -62,8 +62,8 @@ export const IngredientSelect = () => {
     return (
         <Popover open={open} onOpenChange={setOpen}>
 
-            <PopoverTrigger>
-                <Label htmlFor="ingredient-select">Find by Ingredient</Label>
+            <Label htmlFor="ingredient-select">Find by Ingredient</Label>
+            <PopoverTrigger asChild>
                 <Button id="ingredient-select" variant="outline" role="combobox" aria-expanded={open} className="w-[200px] justify-between">
                     {value ? ingredientsList.find((ingredient) => ingredient.value === value)?.key : "Select ingredient..."}
                     <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />

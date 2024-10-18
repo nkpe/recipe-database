@@ -24,10 +24,10 @@ export const CategoryIcons = () => {
             <div className="w-100 category-icons-wrapper flex flex-wrap gap-1" id="category-select">
                 {categories.map((cat) => {
                     return (
-                        <TooltipProvider>
-                            <Tooltip>
+                        <TooltipProvider key={cat.value}>
+                            <Tooltip >
                                 <TooltipTrigger asChild>
-                                    <Button variant="outline" size="icon" key={cat.value}>
+                                    <Button variant="outline" size="icon">
                                         {cat.icon}
                                     </Button>
                                 </TooltipTrigger>

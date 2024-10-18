@@ -16,7 +16,7 @@ export const AllergySelect = () => {
             <Label htmlFor="allergy-container">Select Allergens:</Label>
             {allergies.map((item) => {
                 return (
-                    <div className="flex gap-1">
+                    <div className="flex gap-1" key={item.value}>
                         <Checkbox id={`${item.value}-checkbox`} />
                         <Label htmlFor={`${item.value}-checkbox`}>
                             {item.allergy}

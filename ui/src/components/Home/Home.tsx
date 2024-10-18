@@ -1,6 +1,9 @@
 import { Aside } from "./Aside";
 import { FeatureRecipes } from "./FeatureRecipes";
 
+fetch('server/app/src/main/resources/data/recipes.json')
+    .then((res)=> res.json())
+    .then((json) => console.log(json))
 
 export const Home = () => {
     return (
@@ -8,6 +11,7 @@ export const Home = () => {
             <Aside />
             <div className="h-100 flex-col w-4/5">
                 <FeatureRecipes />
+                <p></p>
             </div>
         </main>
     )
