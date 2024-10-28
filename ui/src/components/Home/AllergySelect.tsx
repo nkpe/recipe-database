@@ -10,8 +10,8 @@ const allergies = [
     { allergy: "Eggs", value: "egg" },
 ]
 
-glutenIcon == "gluten"
-glutenIcon == AllergyCategory.Gluten
+glutenIcon == "gluten";
+glutenIcon == AllergyCategory.Gluten;
 
 export const AllergySelect = ({ allergies }: { allergies: string[] }) => {
     return (
