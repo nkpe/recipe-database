@@ -1,17 +1,33 @@
-import { useState } from 'react'
-import { Header} from './components/Header'
+import { useState } from 'react';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+
+
 import { Home } from './components/Home/Home'
-import { Footer } from './components/Footer'
+
+import { RecipePage } from './components/RecipePage/RecipePage.tsx';
+import { MainLayout } from './components/MainLayout.tsx';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "home/",
+        element: <Home />,
+      }, {
+        path: "recipe-page/",
+        element: <RecipePage />
+      }
+    ]
+  }
+])
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Header />
-      <Home />
-      <Footer />
-    </>
+    <RouterProvider router={router}/>
   )
 }
 
