@@ -1,0 +1,101 @@
+[
+  {
+      "name": "Chicken and Sweet Potato Bake", 
+      "img": "./src/assets/imgs/chicken-sweet-potato-bake.jpg",
+      "ingredients": ["chicken breasts", "sweet potatoes", "olive oil", "rosemary", "garlic", "salt", "pepper"], 
+      "instructions": "Season chicken and sweet potatoes, bake until cooked.", 
+      "allergenCategories": [], 
+      "mealCategories": ["dinner", "lunch"],
+      "totalTime": 45,
+      "prepTime": 10,
+      "featured": true
+    },
+    {
+      "name": "Creamy Chicken Pasta", 
+      "img": "./src/assets/imgs/creamy-chicken-pasta.jpg",
+      "ingredients": ["chicken breasts", "pasta", "cream", "Parmesan cheese", "garlic", "butter"], 
+      "instructions": "Cook pasta and chicken, mix with cream and Parmesan sauce.", 
+      "allergenCategories": ["Gluten", "dairy"], 
+      "mealCategories": ["dinner", "lunch"],
+      "totalTime": 15,
+      "prepTime": 5,
+      "featured": false
+    },
+    {
+      "name": "Teriyaki Pork", 
+      "img": "./src/assets/imgs/teriyaki-pork.jpg",
+      "ingredients": ["pork loin", "soy sauce", "ginger", "garlic", "brown sugar", "sesame oil"], 
+      "instructions": "Marinate pork in teriyaki sauce, grill or bake until cooked.", 
+      "allergenCategories": ["soy"], 
+      "mealCategories": ["dinner", "lunch"],
+      "totalTime": 25,
+      "prepTime": 10,
+      "featured": false
+    },
+    {
+      "name": "Chicken Curry", 
+      "img": "./src/assets/imgs/curry-chicken.jpg",
+      "ingredients": ["chicken breasts", "coconut milk", "curry powder", "onions", "garlic", "ginger"], 
+      "instructions": "Cook chicken with curry spices, add coconut milk and simmer.", 
+      "allergenCategories": [], 
+      "mealCategories": ["dinner", "lunch"],
+      "totalTime": 35,
+      "prepTime": 10,
+      "featured": true
+    },
+    {
+      "name": "Pasta Carbonara", 
+      "img": "./src/assets/imgs/pasta-carbonara.jpg",
+      "ingredients": ["pasta", "eggs", "Parmesan cheese", "bacon", "black pepper"], 
+      "instructions": "Cook pasta, mix with eggs, cheese, and bacon.", 
+      "allergenCategories": ["gluten", "eggs", "dairy"], 
+      "mealCategories": ["dinner", "lunch"],
+      "totalTime": 20,
+      "prepTime": 10,
+      "featured": true
+    },
+  {
+      "name": "Pesto Pasta", 
+      "img": "./src/assets/imgs/pasta-pesto.jpg",
+      "ingredients": ["Pasta", "pesto", "Parmesan cheese"], 
+      "instructions": "Cook pasta, mix with pesto sauce, and garnish with Parmesan cheese.", 
+      "allergenCategories":  ["gluten", "dairy", "nuts"], 
+      "mealCategories": ["dinner", "lunch"],
+      "totalTime": 15,
+      "prepTime": 5,
+      "featured": true
+  },
+  {
+      "name": "Avocado and Egg Salad", 
+      "img": "./src/assets/imgs/salad-avocado-egg.jpg",
+      "ingredients": ["Avocado", "eggs", "mixed greens", "olive oil", "salt", "pepper"], 
+      "instructions": "Boil eggs, chop avocado, mix with salad greens, and dress with olive oil.", 
+      "allergenCategories": ["eggs"], 
+      "mealCategories": ["dinner", "lunch"],
+      "totalTime": 20,
+      "prepTime": 10,
+      "featured": true
+    },
+    {
+      "name": "Butternut Squash Soup", 
+      "img": "./src/assets/imgs/soup-butternutsquash.jpg",
+      "ingredients": ["Butternut squash", "vegetable broth", "onion", "garlic", "olive oil", "salt", "pepper"], 
+      "instructions": "Roast squash, blend with broth, and season with spices", 
+      "allergenCategories": [], 
+      "mealCategories": ["dinner", "lunch"],
+      "totalTime": 55,
+      "prepTime": 15,
+      "featured": true
+    },
+    {
+      "name": "Tiramisu", 
+      "img": "./src/assets/imgs/tiramisu.jpg",
+      "ingredients": ["Ladyfingers"," mascarpone cheese", "coffee", "eggs", "sugar", "cocoa powder"], 
+      "instructions": "Layer soaked ladyfingers with mascarpone cream, dust with cocoa powder.", 
+      "allergenCategories": ["gluten", "milk", "lactose", "eggs"], 
+      "mealCategories": ["dessert"],
+      "totalTime": 260,
+      "prepTime": 20,
+      "featured": true
+    }
+]

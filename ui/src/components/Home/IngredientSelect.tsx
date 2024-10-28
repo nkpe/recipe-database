@@ -16,8 +16,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
-import { Label } from "@/components/ui/label"
-
+import { Label } from "@/components/ui/label";
 
 const ingredientsList = [
     { key: "Chicken breasts", value: "chickenBreasts" },
@@ -55,7 +54,7 @@ const ingredientsList = [
 ];
 
 
-export const IngredientSelect = () => {
+export const IngredientSelect = ({ ingredientsList }: { ingredientsList: string[] }) => {
     const [open, setOpen] = React.useState(false)
     const [value, setValue] = React.useState("")
 
@@ -78,14 +77,14 @@ export const IngredientSelect = () => {
                         <CommandGroup>
                             {ingredientsList.map((ingredient) => (
                                 <CommandItem key={ingredient.value} value={ingredient.value} onSelect={(currentValue) => {
-                                        setValue(currentValue === value ? "" : currentValue)
-                                        setOpen(false)
-                                    }}
+                                    setValue(currentValue === value ? "" : currentValue)
+                                    setOpen(false)
+                                }}
                                 >
                                     <Check className={cn(
-                                            "mr-2 h-4 w-4",
-                                            value === ingredient.value ? "opacity-100" : "opacity-0"
-                                        )}
+                                        "mr-2 h-4 w-4",
+                                        value === ingredient.value ? "opacity-100" : "opacity-0"
+                                    )}
                                     />
                                     {ingredient.key}
                                 </CommandItem>

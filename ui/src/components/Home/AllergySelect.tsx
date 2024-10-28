@@ -10,7 +10,10 @@ const allergies = [
     { allergy: "Eggs", value: "egg" },
 ]
 
-export const AllergySelect = () => {
+glutenIcon == "gluten"
+glutenIcon == AllergyCategory.Gluten
+
+export const AllergySelect = ({ allergies }: { allergies: string[] }) => {
     return (
         <div className="allergy-container flex flex-col gap-2" id="allergy-container">
             <Label htmlFor="allergy-container">Select Allergens:</Label>
@@ -22,7 +25,6 @@ export const AllergySelect = () => {
                             {item.allergy}
                         </Label>
                     </div>
-
                 )
             })}
         </div>
