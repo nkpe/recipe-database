@@ -1,28 +1,26 @@
+// import { BeanOff, EggOff, MilkOff, NutOff, WheatOff } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label"
 
+export const AllergySelect = ({ allergenCategories }: { allergenCategories: string[] }) => {
 
-const allergies = [
-    { allergy: "Gluten", value: "gluten" },
-    { allergy: "Diary", value: "meat" },
-    { allergy: "Milk", value: "milk" },
-    { allergy: "Nuts", value: "nuts" },
-    { allergy: "Eggs", value: "egg" },
-]
+    // const allergensIcons = [
+    //     { allergen: "gluten", value: "gluten", icon: <WheatOff /> },
+    //     { allergen: "dairy", value: "dairy", icon: <MilkOff /> },
+    //     { allergen: "nuts", value: "nuts", icon: <NutOff /> },
+    //     { allergen: "eggs", value: "eggs", icon: <EggOff /> },
+    //     { allergen: "soy", value: "soy", icon: <BeanOff /> }
+    // ]
 
-glutenIcon == "gluten";
-glutenIcon == AllergyCategory.Gluten;
-
-export const AllergySelect = ({ allergies }: { allergies: string[] }) => {
     return (
         <div className="allergy-container flex flex-col gap-2" id="allergy-container">
             <Label htmlFor="allergy-container">Select Allergens:</Label>
-            {allergies.map((item) => {
+            {allergenCategories.map((allergen) => {
                 return (
-                    <div className="flex gap-1" key={item.value}>
-                        <Checkbox id={`${item.value}-checkbox`} />
-                        <Label htmlFor={`${item.value}-checkbox`}>
-                            {item.allergy}
+                    <div className="flex gap-1" key={allergen}>
+                        <Checkbox id={`${allergen}-checkbox`} />
+                        <Label htmlFor={`${allergen}-checkbox`}>
+                            {allergen}
                         </Label>
                     </div>
                 )

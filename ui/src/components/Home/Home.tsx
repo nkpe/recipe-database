@@ -3,7 +3,7 @@ import { FeaturedRecipes } from "./FeaturedRecipes";
 
 import recipesJson from "../../assets/recipes.json";
 
-const allergenCategory = ["gluten", "dairy", "milk", "nuts", "eggs", "soy"];
+export const allergenCategory = ["gluten", "dairy", "nuts", "eggs", "soy"];
 const mealCategory = ["starter", "meat", "fish", "veggie", "dessert"];
 
 export class Recipe {
@@ -67,7 +67,7 @@ export const Home = () => {
 
     return (
         <main className="h-screen flex m-4 box-border gap-4">
-            <Aside recipes={recipes}/>
+            <Aside recipes={recipes} allergenCategories={allergenCategory}/>
             <div className="h-100 flex-col w-4/5">
                 <FeaturedRecipes recipes={recipes} />
                 <p></p>

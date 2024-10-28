@@ -4,7 +4,7 @@ import { AllergySelect } from "./AllergySelect";
 
 import { Recipe } from "./Home";
 
-export const Aside = ({recipes} : {recipes: Recipe[]}) => {
+export const Aside = ({recipes, allergenCategories} : {recipes: Recipe[], allergenCategories: string[]}) => {
     const uniqueIngredients: Set<string> = new Set();
 
     recipes.forEach((r)=> {
@@ -17,7 +17,7 @@ export const Aside = ({recipes} : {recipes: Recipe[]}) => {
         <div className="h-100 w-1/5 flex flex-col items-center gap-4 bg-secondary rounded-md">
             <IngredientSelect ingredientsList={uniqueIngredients}/>
             <CategoryIcons />
-            {/* <AllergySelect /> */}
+            <AllergySelect allergenCategories={allergenCategories}/>
         </div>
     )
 }
