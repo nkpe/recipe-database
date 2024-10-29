@@ -2,16 +2,17 @@
 import { useEffect, useState } from "react";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
-import { Recipe } from "./Home";
+import { Recipe } from "@/lib/recipeData";
 
 type ImgProps = {
-    src :string
+    src: string,
+    alt: string
 };
 
-const ImgCard = ({ src } :ImgProps ) => {
+const ImgCard = ({ src, alt } :ImgProps ) => {
     return (
         <div className="overflow-hidden rounded-md" >
-            <img className="aspect-[3/4] h-fit object-cover w-60" src={src} alt="recipe-img" />
+            <img className="aspect-[3/4] h-fit object-cover w-60" src={src} alt={alt} />
         </div>
     )
 };
@@ -42,7 +43,7 @@ export const FeaturedRecipes = ({recipes} : {recipes :Recipe[]}) => {
             {/* CSS Grid on ScrollArea? */}
             <ScrollArea className="h-98 whitespace-nowrap rounded-md border-solid border-2 " >
                 <div className="flex w-max space-x-4 p-2">
-                    {featuredRecipesData.map((recipe, i) => {return <ImgCard src={recipe.img} key={i}></ImgCard>})}
+                    {featuredRecipesData.map((recipe, i) => {return <ImgCard src={recipe.img} key={i} alt={recipe.name}></ImgCard>})}
                 </div>
                 <ScrollBar orientation="horizontal" />
             </ScrollArea>
