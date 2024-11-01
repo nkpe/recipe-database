@@ -13,8 +13,6 @@ An application to store recipes in a NoSQL database that can be queried to find 
 # Development
 ## How to run
 
-``` gradle run ```
-
 ### Frontend 
 
 - ```cd ui```
@@ -30,7 +28,10 @@ An application to store recipes in a NoSQL database that can be queried to find 
 ``` gradle test ```
 
 ## Technologies 
-
+* React.js
+* Typescript
+* ShadCN 
+* TailwindCSS
 * Java
 * Gradle
 * MongoDB Atlas

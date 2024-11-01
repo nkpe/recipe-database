@@ -1,5 +1,6 @@
 [
-  {
+  {   
+      "id": 1,
       "name": "Chicken and Sweet Potato Bake", 
       "img": "./src/assets/imgs/chicken-sweet-potato-bake.jpg",
       "ingredients": ["chicken breasts", "sweet potatoes", "olive oil", "rosemary", "garlic", "salt", "pepper"], 
@@ -11,6 +12,7 @@
       "featured": true
     },
     {
+      "id": 2,
       "name": "Creamy Chicken Pasta", 
       "img": "./src/assets/imgs/creamy-chicken-pasta.jpg",
       "ingredients": ["chicken breasts", "pasta", "cream", "Parmesan cheese", "garlic", "butter"], 
@@ -22,6 +24,7 @@
       "featured": false
     },
     {
+      "id": 3,
       "name": "Teriyaki Pork", 
       "img": "./src/assets/imgs/teriyaki-pork.jpg",
       "ingredients": ["pork loin", "soy sauce", "ginger", "garlic", "brown sugar", "sesame oil"], 
@@ -33,6 +36,7 @@
       "featured": false
     },
     {
+      "id": 4,
       "name": "Chicken Curry", 
       "img": "./src/assets/imgs/curry-chicken.jpg",
       "ingredients": ["chicken breasts", "coconut milk", "curry powder", "onions", "garlic", "ginger"], 
@@ -44,6 +48,7 @@
       "featured": true
     },
     {
+      "id": 5,
       "name": "Pasta Carbonara", 
       "img": "./src/assets/imgs/pasta-carbonara.jpg",
       "ingredients": ["pasta", "eggs", "Parmesan cheese", "bacon", "black pepper"], 
@@ -55,6 +60,7 @@
       "featured": true
     },
   {
+    "id": 6,
       "name": "Pesto Pasta", 
       "img": "./src/assets/imgs/pasta-pesto.jpg",
       "ingredients": ["Pasta", "pesto", "Parmesan cheese"], 
@@ -66,6 +72,7 @@
       "featured": true
   },
   {
+      "id": 7,
       "name": "Avocado and Egg Salad", 
       "img": "./src/assets/imgs/salad-avocado-egg.jpg",
       "ingredients": ["Avocado", "eggs", "mixed greens", "olive oil", "salt", "pepper"], 
@@ -77,6 +84,7 @@
       "featured": true
     },
     {
+      "id": 8,
       "name": "Butternut Squash Soup", 
       "img": "./src/assets/imgs/soup-butternutsquash.jpg",
       "ingredients": ["Butternut squash", "vegetable broth", "onion", "garlic", "olive oil", "salt", "pepper"], 
@@ -88,6 +96,7 @@
       "featured": true
     },
     {
+      "id": 9,
       "name": "Tiramisu", 
       "img": "./src/assets/imgs/tiramisu.jpg",
       "ingredients": ["Ladyfingers"," mascarpone cheese", "coffee", "eggs", "sugar", "cocoa powder"], 
