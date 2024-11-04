@@ -10,7 +10,16 @@ export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
                 <div className="w-1/4 aspect-square overflow-hidden ">
                     <img className="h-full w-full object-cover" src={recipe.img} alt={recipe.name} />
                 </div>
-                <h1>{recipe.name}</h1>
+                <div className="recipe-info-wrapper">
+                    <h1>{recipe.name}</h1>
+                    <p>{recipe.description}</p>
+                    <div className="recipe-timings">
+                        <ul className="flex gap-4">
+                            <li>Prep time: {recipe.prepTime}</li>
+                            <li>Total time: {recipe.totalTime}</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <Separator />
             <div className="recipe-details">

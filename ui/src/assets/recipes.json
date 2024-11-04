@@ -2,9 +2,16 @@
   {   
       "id": 1,
       "name": "Chicken and Sweet Potato Bake", 
+      "description": "A hearty and healthy baked dish combining tender chicken and sweet potatoes with a touch of rosemary.",
       "img": "./src/assets/imgs/chicken-sweet-potato-bake.jpg",
       "ingredients": ["chicken breasts", "sweet potatoes", "olive oil", "rosemary", "garlic", "salt", "pepper"], 
-      "instructions": "Season chicken and sweet potatoes, bake until cooked.", 
+      "instructions": [
+          "1. Preheat oven to 400°F (200°C).",
+          "2. Cube sweet potatoes and season with olive oil, rosemary, salt, and pepper.",
+          "3. Season chicken breasts with garlic, salt, and pepper.",
+          "4. Place chicken and sweet potatoes on a baking sheet.",
+          "5. Bake for 35-40 minutes, or until chicken is cooked through."
+      ], 
       "allergenCategories": [], 
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 45,
@@ -14,9 +21,16 @@
     {
       "id": 2,
       "name": "Creamy Chicken Pasta", 
+      "description": "A quick and rich pasta dish with tender chicken, creamy sauce, and Parmesan.",
       "img": "./src/assets/imgs/creamy-chicken-pasta.jpg",
       "ingredients": ["chicken breasts", "pasta", "cream", "Parmesan cheese", "garlic", "butter"], 
-      "instructions": "Cook pasta and chicken, mix with cream and Parmesan sauce.", 
+      "instructions": [
+          "1. Boil pasta according to package instructions, then drain.",
+          "2. In a pan, cook diced chicken until golden.",
+          "3. Add garlic and butter to the pan and sauté.",
+          "4. Pour in cream and simmer until sauce thickens.",
+          "5. Add pasta and Parmesan, stirring to coat."
+      ], 
       "allergenCategories": ["Gluten", "dairy"], 
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 15,
@@ -26,9 +40,16 @@
     {
       "id": 3,
       "name": "Teriyaki Pork", 
+      "description": "A savory and slightly sweet teriyaki pork dish with ginger and garlic flavors.",
       "img": "./src/assets/imgs/teriyaki-pork.jpg",
       "ingredients": ["pork loin", "soy sauce", "ginger", "garlic", "brown sugar", "sesame oil"], 
-      "instructions": "Marinate pork in teriyaki sauce, grill or bake until cooked.", 
+      "instructions": [
+          "1. Mix soy sauce, ginger, garlic, brown sugar, and sesame oil in a bowl.",
+          "2. Marinate pork loin in the sauce for at least 15 minutes.",
+          "3. Preheat grill or oven to medium heat.",
+          "4. Grill or bake pork until cooked through, turning occasionally.",
+          "5. Slice and serve with extra sauce if desired."
+      ], 
       "allergenCategories": ["soy"], 
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 25,
@@ -38,9 +59,16 @@
     {
       "id": 4,
       "name": "Chicken Curry", 
+      "description": "A warm and flavorful chicken curry simmered in coconut milk with aromatic spices.",
       "img": "./src/assets/imgs/curry-chicken.jpg",
       "ingredients": ["chicken breasts", "coconut milk", "curry powder", "onions", "garlic", "ginger"], 
-      "instructions": "Cook chicken with curry spices, add coconut milk and simmer.", 
+      "instructions": [
+          "1. Sauté onions, garlic, and ginger in a pan until soft.",
+          "2. Add diced chicken and cook until browned.",
+          "3. Sprinkle curry powder and stir to coat the chicken.",
+          "4. Pour in coconut milk and bring to a simmer.",
+          "5. Cook for 20 minutes, or until sauce thickens."
+      ], 
       "allergenCategories": [], 
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 35,
@@ -50,33 +78,54 @@
     {
       "id": 5,
       "name": "Pasta Carbonara", 
+      "description": "A classic Italian pasta dish with creamy eggs, Parmesan, and crispy bacon.",
       "img": "./src/assets/imgs/pasta-carbonara.jpg",
       "ingredients": ["pasta", "eggs", "Parmesan cheese", "bacon", "black pepper"], 
-      "instructions": "Cook pasta, mix with eggs, cheese, and bacon.", 
+      "instructions": [
+          "1. Boil pasta until al dente, then drain.",
+          "2. Cook bacon in a pan until crispy, then remove.",
+          "3. In a bowl, whisk eggs and Parmesan together.",
+          "4. Add hot pasta to the egg mixture and stir quickly.",
+          "5. Toss with bacon and black pepper before serving."
+      ], 
       "allergenCategories": ["gluten", "eggs", "dairy"], 
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 20,
       "prepTime": 10,
       "featured": true
     },
-  {
-    "id": 6,
+    {
+      "id": 6,
       "name": "Pesto Pasta", 
+      "description": "A vibrant and fresh pasta tossed in basil pesto and topped with Parmesan.",
       "img": "./src/assets/imgs/pasta-pesto.jpg",
       "ingredients": ["Pasta", "pesto", "Parmesan cheese"], 
-      "instructions": "Cook pasta, mix with pesto sauce, and garnish with Parmesan cheese.", 
-      "allergenCategories":  ["gluten", "dairy", "nuts"], 
+      "instructions": [
+          "1. Boil pasta until al dente, then drain.",
+          "2. In a bowl, toss pasta with pesto sauce.",
+          "3. Add a sprinkle of Parmesan cheese.",
+          "4. Mix to combine flavors.",
+          "5. Serve warm with extra Parmesan if desired."
+      ], 
+      "allergenCategories": ["gluten", "dairy", "nuts"], 
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 15,
       "prepTime": 5,
       "featured": true
-  },
-  {
+    },
+    {
       "id": 7,
       "name": "Avocado and Egg Salad", 
+      "description": "A light and nutritious salad featuring creamy avocado, boiled eggs, and mixed greens.",
       "img": "./src/assets/imgs/salad-avocado-egg.jpg",
       "ingredients": ["Avocado", "eggs", "mixed greens", "olive oil", "salt", "pepper"], 
-      "instructions": "Boil eggs, chop avocado, mix with salad greens, and dress with olive oil.", 
+      "instructions": [
+          "1. Boil eggs to desired doneness, then peel and chop.",
+          "2. Slice avocado and add to a bowl with mixed greens.",
+          "3. Add chopped eggs to the bowl.",
+          "4. Drizzle with olive oil and season with salt and pepper.",
+          "5. Toss gently to combine."
+      ], 
       "allergenCategories": ["eggs"], 
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 20,
@@ -86,9 +135,16 @@
     {
       "id": 8,
       "name": "Butternut Squash Soup", 
+      "description": "A comforting, creamy soup made with roasted butternut squash and simple seasonings.",
       "img": "./src/assets/imgs/soup-butternutsquash.jpg",
       "ingredients": ["Butternut squash", "vegetable broth", "onion", "garlic", "olive oil", "salt", "pepper"], 
-      "instructions": "Roast squash, blend with broth, and season with spices", 
+      "instructions": [
+          "1. Preheat oven to 400°F (200°C) and roast cubed squash until soft.",
+          "2. Sauté onions and garlic in a pot with olive oil.",
+          "3. Add roasted squash to the pot with vegetable broth.",
+          "4. Simmer for 15 minutes, then blend until smooth.",
+          "5. Season with salt and pepper before serving."
+      ], 
       "allergenCategories": [], 
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 55,
@@ -98,9 +154,16 @@
     {
       "id": 9,
       "name": "Tiramisu", 
+      "description": "An indulgent Italian dessert featuring coffee-soaked ladyfingers layered with mascarpone cream.",
       "img": "./src/assets/imgs/tiramisu.jpg",
-      "ingredients": ["Ladyfingers"," mascarpone cheese", "coffee", "eggs", "sugar", "cocoa powder"], 
-      "instructions": "Layer soaked ladyfingers with mascarpone cream, dust with cocoa powder.", 
+      "ingredients": ["Ladyfingers", "mascarpone cheese", "coffee", "eggs", "sugar", "cocoa powder"], 
+      "instructions": [
+          "1. Brew coffee and let it cool.",
+          "2. Dip ladyfingers in coffee and arrange a layer in a dish.",
+          "3. Whisk mascarpone, sugar, and eggs until smooth.",
+          "4. Spread mascarpone mixture over the ladyfingers.",
+          "5. Repeat layers and dust with cocoa powder. Chill before serving."
+      ], 
       "allergenCategories": ["gluten", "milk", "lactose", "eggs"], 
       "mealCategories": ["dessert"],
       "totalTime": 260,
