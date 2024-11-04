@@ -61,6 +61,20 @@
     }
 
     html {
-        font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    main {
+      @apply min-h-screen m-4 box-border gap-4;
+    }
+
+    h1 {
+      @apply text-3xl font-medium;
+    }
+    h2 {
+      @apply text-2xl;
+    }
+    h3 {
+      @apply text-xl;
     }
   }
