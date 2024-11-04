@@ -6,8 +6,12 @@ import { Recipe } from "@/lib/recipeData";
 export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
     return (
         <main>
-            <h1>{recipe.name}</h1>
-            <img src={recipe.img} alt={recipe.name} />
+            <div className="">
+                <h1>{recipe.name}</h1>
+                <div className="w-1/4 aspect-square overflow-hidden ">
+                    <img className="h-full w-full object-cover" src={recipe.img} alt={recipe.name} />
+                </div>
+            </div>
             <Separator />
             <ul>
                 {recipe.ingredients.map((ingredient, i) => {
@@ -15,7 +19,6 @@ export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
                 })}
             </ul>
             <article>{recipe.instructions}</article>
-
         </main>
     )
 }
