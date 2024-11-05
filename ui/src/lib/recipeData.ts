@@ -6,18 +6,21 @@ export const mealCategory = ["starter", "meat", "fish", "veggie", "dessert"];
 export class Recipe {
     id: number;
     name: string;
+    description : string;
     img: string;
     ingredients: string[];
-    instructions: string;
+    instructions: string[];
     allergenCategories: string[];
     mealCategories: string[];
     totalTime: number;
     prepTime: number;
     featured: boolean;
+    serves: number;
 
-    constructor(id: number, name: string, img: string, ingredients: string[], instructions: string, allergenCategories: string[], mealCategories: string[], totalTime: number, prepTime: number, featured: boolean) {
+    constructor(id: number, name: string, description: string, img: string, ingredients: string[], instructions: string[], allergenCategories: string[], mealCategories: string[], totalTime: number, prepTime: number, featured: boolean, serves: number) {
         this.id = id;
         this.name = name;
+        this.description = description;
         this.img = img;
         this.ingredients = ingredients;
         this.instructions = instructions;
@@ -25,7 +28,8 @@ export class Recipe {
         this.mealCategories = mealCategories;
         this.totalTime = totalTime;
         this.prepTime = prepTime;
-        this.featured = featured
+        this.featured = featured;
+        this.serves = serves;
     }
 };
 
@@ -53,7 +57,7 @@ const parseRecipeJson = (recipesJson: Recipe[]) => {
             )
         });
 
-        const newRecipe = new Recipe(r.id, r.name, r.img, r.ingredients, r.instructions, parsedRecipeAllergies, parsedMealCategories, r.totalTime, r.prepTime, r.featured);
+        const newRecipe = new Recipe(r.id, r.name, r.description, r.img, r.ingredients, r.instructions, parsedRecipeAllergies, parsedMealCategories, r.totalTime, r.prepTime, r.featured, r.serves);
         parsedRecipes.push(newRecipe);
     })
 

@@ -16,7 +16,8 @@
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 45,
       "prepTime": 10,
-      "featured": true
+      "featured": true,
+      "serves": 2
     },
     {
       "id": 2,
@@ -35,7 +36,8 @@
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 15,
       "prepTime": 5,
-      "featured": false
+      "featured": false,
+      "serves": 2
     },
     {
       "id": 3,
@@ -54,7 +56,8 @@
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 25,
       "prepTime": 10,
-      "featured": false
+      "featured": false,
+      "serves": 2
     },
     {
       "id": 4,
@@ -73,7 +76,8 @@
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 35,
       "prepTime": 10,
-      "featured": true
+      "featured": true,
+      "serves": 2
     },
     {
       "id": 5,
@@ -92,7 +96,8 @@
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 20,
       "prepTime": 10,
-      "featured": true
+      "featured": true,
+      "serves": 2
     },
     {
       "id": 6,
@@ -111,7 +116,8 @@
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 15,
       "prepTime": 5,
-      "featured": true
+      "featured": true,
+      "serves": 2
     },
     {
       "id": 7,
@@ -130,7 +136,8 @@
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 20,
       "prepTime": 10,
-      "featured": true
+      "featured": true,
+      "serves": 2
     },
     {
       "id": 8,
@@ -149,7 +156,8 @@
       "mealCategories": ["dinner", "lunch"],
       "totalTime": 55,
       "prepTime": 15,
-      "featured": true
+      "featured": true,
+      "serves": 2
     },
     {
       "id": 9,
@@ -168,6 +176,7 @@
       "mealCategories": ["dessert"],
       "totalTime": 260,
       "prepTime": 20,
-      "featured": true
+      "featured": true,
+      "serves": 2
     }
 ]
