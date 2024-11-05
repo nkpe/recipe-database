@@ -13,7 +13,7 @@
           "5. Bake for 35-40 minutes, or until chicken is cooked through."
       ], 
       "allergenCategories": [], 
-      "mealCategories": ["dinner", "lunch"],
+      "mealCategories": ["meat"],
       "totalTime": 45,
       "prepTime": 10,
       "featured": true,
@@ -33,7 +33,7 @@
           "5. Add pasta and Parmesan, stirring to coat."
       ], 
       "allergenCategories": ["Gluten", "dairy"], 
-      "mealCategories": ["dinner", "lunch"],
+      "mealCategories": ["meat"],
       "totalTime": 15,
       "prepTime": 5,
       "featured": false,
@@ -53,7 +53,7 @@
           "5. Slice and serve with extra sauce if desired."
       ], 
       "allergenCategories": ["soy"], 
-      "mealCategories": ["dinner", "lunch"],
+      "mealCategories": ["meat"],
       "totalTime": 25,
       "prepTime": 10,
       "featured": false,
@@ -73,7 +73,7 @@
           "5. Cook for 20 minutes, or until sauce thickens."
       ], 
       "allergenCategories": [], 
-      "mealCategories": ["dinner", "lunch"],
+      "mealCategories": ["meat"],
       "totalTime": 35,
       "prepTime": 10,
       "featured": true,
@@ -93,7 +93,7 @@
           "5. Toss with bacon and black pepper before serving."
       ], 
       "allergenCategories": ["gluten", "eggs", "dairy"], 
-      "mealCategories": ["dinner", "lunch"],
+      "mealCategories": ["meat"],
       "totalTime": 20,
       "prepTime": 10,
       "featured": true,
@@ -113,7 +113,7 @@
           "5. Serve warm with extra Parmesan if desired."
       ], 
       "allergenCategories": ["gluten", "dairy", "nuts"], 
-      "mealCategories": ["dinner", "lunch"],
+      "mealCategories": ["veggie"],
       "totalTime": 15,
       "prepTime": 5,
       "featured": true,
@@ -133,7 +133,7 @@
           "5. Toss gently to combine."
       ], 
       "allergenCategories": ["eggs"], 
-      "mealCategories": ["dinner", "lunch"],
+      "mealCategories": ["veggie"],
       "totalTime": 20,
       "prepTime": 10,
       "featured": true,
@@ -153,7 +153,7 @@
           "5. Season with salt and pepper before serving."
       ], 
       "allergenCategories": [], 
-      "mealCategories": ["dinner", "lunch"],
+      "mealCategories": ["veggie", "starter"],
       "totalTime": 55,
       "prepTime": 15,
       "featured": true,
@@ -173,7 +173,7 @@
           "5. Repeat layers and dust with cocoa powder. Chill before serving."
       ], 
       "allergenCategories": ["gluten", "milk", "lactose", "eggs"], 
-      "mealCategories": ["dessert"],
+      "mealCategories": ["dessert", "veggie"],
       "totalTime": 260,
       "prepTime": 20,
       "featured": true,

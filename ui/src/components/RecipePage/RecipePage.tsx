@@ -1,5 +1,6 @@
 import { Bean, Egg, Milk, Nut, Wheat } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { Badge } from "@/components/ui/badge"
 
 import { Recipe } from "@/lib/recipeData";
 
@@ -15,9 +16,10 @@ const allergenIcons = [
 // ADD MEAL CATEGORIES USING SHADCN BADGE
 
 export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
+    console.log("CAT: ", recipe.mealCategories)
     return (
         <main>
-            <div className="recipe-top-wrapper flex flex-row">
+            <div className="recipe-top-wrapper flex flex-row gap-4">
                 <div className="w-1/4 aspect-square overflow-hidden ">
                     <img className="h-full w-full object-cover" src={recipe.img} alt={recipe.name} />
                 </div>
@@ -30,18 +32,26 @@ export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
                         <li>Total time: {recipe.totalTime}</li>
                     </ul>
 
-                    <div id="recipe-details flex flex-col gap-4">
-                        <div id="recipe-allergens">
-                            <h2>Allergens:</h2>
+                    <div id="recipe-categories" className="flex flex-col gap-4">
+                        <div id="recipe-allergens" className="flex flex-col gap-2">
+                            <h2>Allergens</h2>
                             <ul className="flex flex-row flex-wrap gap-2">
                                 {recipe.allergenCategories.map((al: string, i: number) => {
                                     const icon = allergenIcons.find(({ allergen }) => allergen === al);
-                                    console.log("icon: ", icon)
-                                    return <li id={`${icon?.allergen}-category`} key={i} className="flex flex-row">{icon?.icon} <p>{icon?.allergen}</p></li>
+                                    return <li id={`${icon?.allergen}-category`} key={i} className="flex flex-row">{icon?.icon} <Badge variant="secondary">{icon?.allergen}</Badge></li>
                                 })}
                             </ul>
                         </div>
-                        <div id="recipe-categories"></div>
+
+                        <div id="recipe-meal-categories" className="flex flex-col gap-2">
+                            <h2>Categories</h2>
+                            <ul className="flex flex-row flex-wrap gap-2"> 
+                                {recipe.mealCategories.map((cat: string, i: number) => {
+                                    console.log("cat: ", cat);
+                                    return <li key={i}><Badge variant="secondary" >{cat}</Badge></li>
+                                })}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
