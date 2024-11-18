@@ -12,13 +12,32 @@ const allergenIcons = [
     { allergen: "soy", value: "soy", icon: <Bean /> }
 ]
 
-// ADD ALLERGENS WITH ICONS 
-// ADD MEAL CATEGORIES USING SHADCN BADGE
+const RecipeIngredientList = ({ recipe }: {recipe: Recipe}) => {
+    return (
+        <div className="flex flex-col gap-2">
+            <h2>Ingredients</h2>
+            <ul className="list-disc list-inside">
+                {recipe.ingredients.map((ingredient, i) => {
+                    return <li key={i}>{ingredient}</li>
+                })}
+            </ul>
+        </div>
+    )
+}
+
+const RecipeInstructions = ({recipe}: {recipe: Recipe}) =>{
+    return (
+        <div className="flex flex-col gap-2">
+            <h2>Step by Step instructions</h2>
+            <article>{recipe.instructions}</article>
+        </div>
+    )
+}
 
 export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
     console.log("CAT: ", recipe.mealCategories)
     return (
-        <main>
+        <main className="flex flex-col gap-4">
             <div className="recipe-top-wrapper flex flex-row gap-4">
                 <div className="w-1/4 aspect-square overflow-hidden ">
                     <img className="h-full w-full object-cover" src={recipe.img} alt={recipe.name} />
@@ -56,13 +75,9 @@ export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
                 </div>
             </div>
             <Separator />
-            <div className="recipe-details">
-                <ul>
-                    {recipe.ingredients.map((ingredient, i) => {
-                        return <li key={i}>{ingredient}</li>
-                    })}
-                </ul>
-                <article>{recipe.instructions}</article>
+            <div className="recipe-details flex flex-col gap-4">
+                <RecipeIngredientList recipe={recipe}/>
+                <RecipeInstructions recipe={recipe} />
             </div>
         </main>
     )
