@@ -43,7 +43,9 @@ export const FeaturedRecipes = ({recipes} : {recipes :Recipe[]}) => {
             {/* CSS Grid on ScrollArea? */}
             <ScrollArea className="h-98 whitespace-nowrap rounded-md border-solid border-2 " >
                 <div className="flex w-max space-x-4 p-2">
-                    {featuredRecipesData.map((recipe, i) => {return <ImgCard src={recipe.img} key={i} alt={recipe.name}></ImgCard>})}
+                    {featuredRecipesData.map((recipe, i) => {
+                        return (<a href={`/recipe:${recipe.id}`}><ImgCard src={recipe.img} key={i} alt={recipe.name}></ImgCard></a>)
+                        })}
                 </div>
                 <ScrollBar orientation="horizontal" />
             </ScrollArea>
