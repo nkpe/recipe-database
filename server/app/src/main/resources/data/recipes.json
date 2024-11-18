@@ -1,82 +1,101 @@
 [
     {
-        "recipe-title": "Chicken and Sweet Potato Bake", 
-        "recipe-img": "./src/assets/recipe-imgs/chicken-sweet-potato-bake.jpg",
+        "name": "Chicken and Sweet Potato Bake", 
+        "img": "./src/assets/imgs/chicken-sweet-potato-bake.jpg",
         "ingredients": ["chicken breasts", "sweet potatoes", "olive oil", "rosemary", "garlic", "salt", "pepper"], 
         "instructions": "Season chicken and sweet potatoes, bake until cooked.", 
-        "allergens": [], 
-        "mealCategories": ["dinner", "lunch"]
+        "allergenCategories": [], 
+        "mealCategories": ["dinner", "lunch"],
+        "totalTime": 45,
+        "prepTime": 10,
+        "featured": true
       },
       {
-        "recipe-title": "Creamy Chicken Pasta", 
-        "recipe-img": "./src/assets/recipe-imgs/creamy-chicken-pasta.jpg",
+        "name": "Creamy Chicken Pasta", 
+        "img": "./src/assets/imgs/creamy-chicken-pasta.jpg",
         "ingredients": ["chicken breasts", "pasta", "cream", "Parmesan cheese", "garlic", "butter"], 
         "instructions": "Cook pasta and chicken, mix with cream and Parmesan sauce.", 
-        "allergens": ["gluten", "dairy"], 
-        "mealCategories": ["dinner", "lunch"]
+        "allergenCategories": ["gluten", "dairy"], 
+        "mealCategories": ["dinner", "lunch"],
+        "totalTime": 15,
+        "prepTime": 5,
+        "featured": false
       },
       {
-        "recipe-title": "Teriyaki Pork", 
-        "recipe-img": "./src/assets/recipe-imgs/teriyaki-pork.jpg",
+        "name": "Teriyaki Pork", 
+        "img": "./src/assets/imgs/teriyaki-pork.jpg",
         "ingredients": ["pork loin", "soy sauce", "ginger", "garlic", "brown sugar", "sesame oil"], 
         "instructions": "Marinate pork in teriyaki sauce, grill or bake until cooked.", 
-        "allergens": ["soy"], 
-        "mealCategories": ["dinner", "lunch"]
+        "allergenCategories": ["soy"], 
+        "mealCategories": ["dinner", "lunch"],
+        "totalTime": 25,
+        "prepTime": 10,
+        "featured": false
       },
       {
-        "recipe-title": "Chicken Curry", 
-        "recipe-img": "./src/assets/recipe-imgs/chicken-curry.jpg",
+        "name": "Chicken Curry", 
+        "img": "./src/assets/imgs/chicken-curry.jpg",
         "ingredients": ["chicken breasts", "coconut milk", "curry powder", "onions", "garlic", "ginger"], 
         "instructions": "Cook chicken with curry spices, add coconut milk and simmer.", 
-        "allergens": [], 
-        "mealCategories": ["dinner", "lunch"]
+        "allergenCategories": [], 
+        "mealCategories": ["dinner", "lunch"],
+        "totalTime": 35,
+        "prepTime": 10,
+        "featured": true
       },
       {
-        "recipe-title": "Pasta Carbonara", 
-        "recipe-img": "./src/assets/recipe-imgs/pasta-carbonara.jpg",
+        "name": "Pasta Carbonara", 
+        "img": "./src/assets/imgs/pasta-carbonara.jpg",
         "ingredients": ["pasta", "eggs", "Parmesan cheese", "bacon", "black pepper"], 
         "instructions": "Cook pasta, mix with eggs, cheese, and bacon.", 
-        "allergens": ["gluten", "eggs", "dairy"], 
-        "mealCategories": ["dinner", "lunch"]
+        "allergenCategories": ["gluten", "eggs", "dairy"], 
+        "mealCategories": ["dinner", "lunch"],
+        "totalTime": 20,
+        "prepTime": 10,
+        "featured": true
       },
     {
-        "recipe-title": "Pesto Pasta", 
-        "recipe-img": "./src/assets/recipe-imgs/pasta-pesto.jpg",
+        "name": "Pesto Pasta", 
+        "img": "./src/assets/imgs/pasta-pesto.jpg",
         "ingredients": ["Pasta", "pesto", "Parmesan cheese"], 
         "instructions": "Cook pasta, mix with pesto sauce, and garnish with Parmesan cheese.", 
-        "allergens":  ["gluten", "dairy", "nuts"], 
+        "allergenCategories":  ["gluten", "dairy", "nuts"], 
         "mealCategories": ["dinner", "lunch"],
-        "total-time": 15,
-        "prep-time": 5
+        "totalTime": 15,
+        "prepTime": 5,
+        "featured": true
     },
     {
-        "recipe-title": "Avocado and Egg Salad", 
-        "recipe-img": "./src/assets/recipe-imgs/salad-avocado-egg.jpg",
+        "name": "Avocado and Egg Salad", 
+        "img": "./src/assets/imgs/salad-avocado-egg.jpg",
         "ingredients": ["Avocado", "eggs", "mixed greens", "olive oil", "salt", "pepper"], 
         "instructions": "Boil eggs, chop avocado, mix with salad greens, and dress with olive oil.", 
-        "allergens": ["eggs"], 
+        "allergenCategories": ["eggs"], 
         "mealCategories": ["dinner", "lunch"],
-        "total-time": 20,
-        "prep-time": 10
+        "totalTime": 20,
+        "prepTime": 10,
+        "featured": true
       },
       {
-        "recipe-title": "Butternut Squash Soup", 
-        "recipe-img": "./src/assets/recipe-imgs/soup-butternutsquash.jpg",
+        "name": "Butternut Squash Soup", 
+        "img": "./src/assets/imgs/soup-butternutsquash.jpg",
         "ingredients": ["Butternut squash", "vegetable broth", "onion", "garlic", "olive oil", "salt", "pepper"], 
         "instructions": "Roast squash, blend with broth, and season with spices", 
-        "allergens": [], 
+        "allergenCategories": [], 
         "mealCategories": ["dinner", "lunch"],
-        "total-time": 55,
-        "prep-time": 15
+        "totalTime": 55,
+        "prepTime": 15,
+        "featured": true
       },
       {
-        "recipe-title": "Tiramisu", 
-        "recipe-img": "./src/assets/recipe-imgs/tiramisu.jpg",
+        "name": "Tiramisu", 
+        "img": "./src/assets/imgs/tiramisu.jpg",
         "ingredients": ["Ladyfingers"," mascarpone cheese", "coffee", "eggs", "sugar", "cocoa powder"], 
         "instructions": "Layer soaked ladyfingers with mascarpone cream, dust with cocoa powder.", 
-        "allergens": ["gluten", "milk", "lactose", "eggs"], 
+        "allergenCategories": ["gluten", "milk", "lactose", "eggs"], 
         "mealCategories": ["dessert"],
-        "total-time": 260,
-        "prep-time": 20
+        "totalTime": 260,
+        "prepTime": 20,
+        "featured": true
       }
-]
+  ]
