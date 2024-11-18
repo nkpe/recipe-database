@@ -29,7 +29,13 @@ const RecipeInstructions = ({recipe}: {recipe: Recipe}) =>{
     return (
         <div className="flex flex-col gap-2">
             <h2>Step by Step instructions</h2>
-            <article>{recipe.instructions}</article>
+            <article>
+                <ul>
+                {recipe.instructions.map((step, i) => {
+                    return <li key={i}>{step}</li>
+                })}
+                </ul>
+            </article>
         </div>
     )
 }
