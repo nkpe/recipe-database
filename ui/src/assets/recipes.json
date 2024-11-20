@@ -2,62 +2,147 @@
   {   
       "id": 1,
       "name": "Chicken and Sweet Potato Bake", 
-      "description": "A hearty and healthy baked dish combining tender chicken and sweet potatoes with a touch of rosemary.",
+      "description": "A hearty and healthy baked dish combining tender chicken and sweet potatoes with a touch of rosemary. Perfect comfort food for those cold evenings or easy bake when entertaining.",
       "img": "./src/assets/imgs/chicken-sweet-potato-bake.jpg",
-      "ingredients": ["chicken breasts", "sweet potatoes", "olive oil", "rosemary", "garlic", "salt", "pepper"], 
+      "ingredients": [
+        {
+          "quantity": 500,
+          "unit": "g",
+          "item": "sweet potatoes"
+        },
+        {
+          "quantity": 2,
+          "unit": "",
+          "item": "red onions"
+        },
+        {
+          "quantity": 8,
+          "unit": "",
+          "item": "garlic cloves, unpeeled"
+        },
+        {
+          "quantity": 2,
+          "unit": "tsp",
+          "item": "dried thyme"
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "dried rosemary"
+        },
+        {
+          "quantity": 1.5,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "quantity": 6,
+          "unit": "",
+          "item": "skinless chicken thigh fillets, each cut in half"
+        },
+        {
+          "quantity": 2,
+          "unit": "",
+          "item": "lemons, 1 juiced and 1 cut into wedges to serve"
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "smoked paprika"
+        },
+        {
+          "quantity": 350,
+          "unit": "g",
+          "item": "broccoli, broken into florets"
+        },
+        {
+          "quantity": 150,
+          "unit": "ml",
+          "item": "chicken stock"
+        }
+      ], 
       "instructions": [
-          "1. Preheat oven to 400°F (200°C).",
-          "2. Cube sweet potatoes and season with olive oil, rosemary, salt, and pepper.",
-          "3. Season chicken breasts with garlic, salt, and pepper.",
-          "4. Place chicken and sweet potatoes on a baking sheet.",
-          "5. Bake for 35-40 minutes, or until chicken is cooked through."
+          "Preheat oven to 400°F (200°C).",
+          "Cube sweet potatoes un 2cm cubes and cut red onions into wedges.",
+          "Add sweet potatoes and red onions to tray and season with olive oil, rosemary, salt, and pepper. Toss everything together. Roast for 15 minutes.",
+          "Take tray out of oven and give veg a mix. Add chicken pieces, drizzle with 1/2 tsp of oil. Squeeze over lemon juice and add paprika. Return to oven for 15 mins.",
+          "Add broccoli to tray and pour over most of the chicken stock. Roast for final 15-20 mins (topping up stock if needed)."
       ], 
       "allergenCategories": [], 
-      "mealCategories": ["meat"],
-      "totalTime": 45,
+      "mealCategories": ["meat", "healthy"],
+      "totalTime": 50,
       "prepTime": 10,
       "featured": true,
-      "serves": 2
+      "serves": 4,
+      "urlSource": "https://realfood.tesco.com/recipes/chicken-and-sweet-potato-traybake.html"
     },
     {
       "id": 2,
-      "name": "Creamy Chicken Pasta", 
-      "description": "A quick and rich pasta dish with tender chicken, creamy sauce, and Parmesan.",
+      "name": "Creamy Chicken and Mushroom Pasta",
+      "description": "A flavorful pasta dish featuring tender chicken and golden mushrooms in a creamy parmesan sauce, enhanced with garlic, rosemary, and a hint of lemon.",
       "img": "./src/assets/imgs/creamy-chicken-pasta.jpg",
-      "ingredients": ["chicken breasts", "pasta", "cream", "Parmesan cheese", "garlic", "butter"], 
+      "ingredients": [
+        { "quantity": 200, "unit": "g", "item": "dried pasta (e.g., rigatoni or penne)" },
+        { "quantity": 2, "unit": "", "item": "chicken thighs" },
+        { "quantity": 1, "unit": "tbsp", "item": "flour (optional)" },
+        { "quantity": 1, "unit": "tbsp", "item": "olive oil" },
+        { "quantity": 1, "unit": "tbsp", "item": "butter" },
+        { "quantity": 200, "unit": "g", "item": "mushrooms, sliced" },
+        { "quantity": 4, "unit": "", "item": "garlic cloves, finely diced" },
+        { "quantity": 1, "unit": "tbsp", "item": "fresh rosemary or thyme" },
+        { "quantity": 125, "unit": "ml", "item": "white wine" },
+        { "quantity": 180, "unit": "ml", "item": "light cream" },
+        { "quantity": 1, "unit": "tbsp", "item": "lemon juice" },
+        { "quantity": 0.5, "unit": "tsp", "item": "black pepper" },
+        { "quantity": 0.25, "unit": "tsp", "item": "sea salt (adjust to taste)" },
+        { "quantity": 50, "unit": "g", "item": "parmesan cheese, grated" },
+        { "quantity": 0.5, "unit": "cup", "item": "flat-leaf parsley, chopped" }
+      ],
       "instructions": [
-          "1. Boil pasta according to package instructions, then drain.",
-          "2. In a pan, cook diced chicken until golden.",
-          "3. Add garlic and butter to the pan and sauté.",
-          "4. Pour in cream and simmer until sauce thickens.",
-          "5. Add pasta and Parmesan, stirring to coat."
-      ], 
-      "allergenCategories": ["Gluten", "dairy"], 
-      "mealCategories": ["meat"],
-      "totalTime": 15,
-      "prepTime": 5,
-      "featured": false,
-      "serves": 2
+        "Cook pasta in salted water until al dente, reserving some pasta water before draining.",
+        "Season chicken thighs with salt, pepper, and optional flour. Sear in olive oil until golden and cooked through, then set aside.",
+        "In the same skillet, toast mushrooms in butter over medium heat until golden brown. Add garlic and rosemary, cooking briefly until fragrant.",
+        "Deglaze the pan with white wine, simmering until reduced. Stir in cream, followed by parmesan in batches, letting it melt into the sauce.",
+        "Combine the cooked pasta, chicken, and parsley with the sauce. Simmer gently to thicken before serving with a final squeeze of lemon."
+      ],
+      "allergenCategories": ["dairy", "gluten"],
+      "mealCategories": ["meat", "pasta"],
+      "totalTime": 35,
+      "prepTime": 10,
+      "featured": true,
+      "serves": 2,
+      "urlSource": "https://www.theburntbuttertable.com/the-best-creamy-chicken-pasta-recipe/"
     },
     {
       "id": 3,
-      "name": "Teriyaki Pork", 
-      "description": "A savory and slightly sweet teriyaki pork dish with ginger and garlic flavors.",
-      "img": "./src/assets/imgs/teriyaki-pork.jpg",
-      "ingredients": ["pork loin", "soy sauce", "ginger", "garlic", "brown sugar", "sesame oil"], 
+      "name": "Pork Teriyaki with Rice and Broccoli",
+      "description": "A quick and flavorful stir-fry featuring tender pork, broccoli, and teriyaki sauce served over rice, perfect for a weeknight meal.",
+      "img": "./src/assets/imgs/pork-teriyaki-rice-broccoli.jpg",
+      "ingredients": [
+        { "quantity": 1, "unit": "tbsp", "item": "vegetable oil" },
+        { "quantity": 2, "unit": "", "item": "pork loin steaks, trimmed and cut into strips" },
+        { "quantity": 2, "unit": "tbsp", "item": "cornflour" },
+        { "quantity": 300, "unit": "g", "item": "broccoli florets" },
+        { "quantity": 1, "unit": "", "item": "red pepper, sliced" },
+        { "quantity": 150, "unit": "ml", "item": "teriyaki sauce" },
+        { "quantity": 2, "unit": "tbsp", "item": "water" },
+        { "quantity": 250, "unit": "g", "item": "cooked jasmine rice" }
+      ],
       "instructions": [
-          "1. Mix soy sauce, ginger, garlic, brown sugar, and sesame oil in a bowl.",
-          "2. Marinate pork loin in the sauce for at least 15 minutes.",
-          "3. Preheat grill or oven to medium heat.",
-          "4. Grill or bake pork until cooked through, turning occasionally.",
-          "5. Slice and serve with extra sauce if desired."
-      ], 
-      "allergenCategories": ["soy"], 
-      "mealCategories": ["meat"],
-      "totalTime": 25,
-      "prepTime": 10,
+        "Heat vegetable oil in a large pan or wok over medium-high heat.",
+        "Coat pork strips with cornflour and fry for 3-4 minutes until golden and cooked through. Remove and set aside.",
+        "Add broccoli and red pepper to the pan. Stir-fry for 5-6 minutes until tender-crisp.",
+        "Stir in teriyaki sauce and water, bringing the mixture to a simmer.",
+        "Return pork to the pan, tossing to coat in the sauce. Cook for 2 more minutes.",
+        "Serve over cooked jasmine rice."
+      ],
+      "allergenCategories": ["soy", "gluten"],
+      "mealCategories": ["meat", "stir-fry"],
+      "totalTime": 20,
+      "prepTime": 5,
       "featured": false,
-      "serves": 2
+      "serves": 2,
+      "urlSource": "https://realfood.tesco.com/recipes/pork-teriyaki-rice-and-broccoli.html"
     },
     {
       "id": 4,
@@ -77,7 +162,8 @@
       "totalTime": 35,
       "prepTime": 10,
       "featured": true,
-      "serves": 2
+      "serves": 2,
+      "urlSource": ""
     },
     {
       "id": 5,
@@ -97,7 +183,8 @@
       "totalTime": 20,
       "prepTime": 10,
       "featured": true,
-      "serves": 2
+      "serves": 2,
+      "urlSource": ""
     },
     {
       "id": 6,
@@ -117,7 +204,8 @@
       "totalTime": 15,
       "prepTime": 5,
       "featured": true,
-      "serves": 2
+      "serves": 2,
+      "urlSource": ""
     },
     {
       "id": 7,
@@ -137,7 +225,8 @@
       "totalTime": 20,
       "prepTime": 10,
       "featured": true,
-      "serves": 2
+      "serves": 2,
+      "urlSource": ""
     },
     {
       "id": 8,
@@ -157,7 +246,8 @@
       "totalTime": 55,
       "prepTime": 15,
       "featured": true,
-      "serves": 2
+      "serves": 2,
+      "urlSource": ""
     },
     {
       "id": 9,
@@ -177,6 +267,7 @@
       "totalTime": 260,
       "prepTime": 20,
       "featured": true,
-      "serves": 2
+      "serves": 2,
+      "urlSource": ""
     }
 ]

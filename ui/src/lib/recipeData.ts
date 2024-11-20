@@ -1,14 +1,27 @@
 import recipesJson from "../assets/recipes.json";
 
+// listed if contains the allergen
 export const allergenCategory = ["gluten", "dairy", "nuts", "eggs", "soy"];
-export const mealCategory = ["starter", "meat", "fish", "veggie", "dessert"];
+export const mealCategory = ["starter", "meat", "fish", "veggie", "dessert", "healthy"];
+
+export class RecipeIngredient {
+    quantity: number;
+    unit: string;
+    item: string;
+
+    constructor(quantity: number, unit: string, item: string){
+        this.quantity = quantity;
+        this.unit = unit;
+        this.item = item;
+    }
+};
 
 export class Recipe {
     id: number;
     name: string;
     description : string;
     img: string;
-    ingredients: string[];
+    ingredients: RecipeIngredient[];
     instructions: string[];
     allergenCategories: string[];
     mealCategories: string[];
@@ -16,8 +29,9 @@ export class Recipe {
     prepTime: number;
     featured: boolean;
     serves: number;
+    urlSource: string;
 
-    constructor(id: number, name: string, description: string, img: string, ingredients: string[], instructions: string[], allergenCategories: string[], mealCategories: string[], totalTime: number, prepTime: number, featured: boolean, serves: number) {
+    constructor(id: number, name: string, description: string, img: string, ingredients: RecipeIngredient[], instructions: string[], allergenCategories: string[], mealCategories: string[], totalTime: number, prepTime: number, featured: boolean, serves: number, urlSource: string) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -30,6 +44,7 @@ export class Recipe {
         this.prepTime = prepTime;
         this.featured = featured;
         this.serves = serves;
+        this.urlSource = urlSource;
     }
 };
 
@@ -57,7 +72,7 @@ const parseRecipeJson = (recipesJson: Recipe[]) => {
             )
         });
 
-        const newRecipe = new Recipe(r.id, r.name, r.description, r.img, r.ingredients, r.instructions, parsedRecipeAllergies, parsedMealCategories, r.totalTime, r.prepTime, r.featured, r.serves);
+        const newRecipe = new Recipe(r.id, r.name, r.description, r.img, r.ingredients, r.instructions, parsedRecipeAllergies, parsedMealCategories, r.totalTime, r.prepTime, r.featured, r.serves, r.urlSource);
         parsedRecipes.push(newRecipe);
     })
 

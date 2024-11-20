@@ -18,7 +18,8 @@ const ImgCard = ({ src, alt } :ImgProps ) => {
 };
 
 export const FeaturedRecipes = ({recipes} : {recipes :Recipe[]}) => {
-    console.log("Recipes array inside FeaturedRecipes", recipes)
+    
+    console.log("Recipes array inside FeaturedRecipes", recipes);
     const [featuredRecipesData, setFeaturedRecipesData] = useState<Recipe[]>([]);
     
     useEffect(() => {
@@ -34,7 +35,7 @@ export const FeaturedRecipes = ({recipes} : {recipes :Recipe[]}) => {
         
         console.log(filtered);
         setFeaturedRecipesData(filtered);
-    }, []);
+    }, [recipes]);
 
 
     return(

@@ -37,7 +37,7 @@ const RecipeIngredientList = ({ recipe }: { recipe: Recipe }) => {
             <h2>Ingredients</h2>
             <ul className="list-disc list-inside">
                 {recipe.ingredients.map((ingredient, i) => {
-                    return <li key={i}>{ingredient}</li>
+                    return <li key={i}>{`${ingredient.quantity} ${ingredient.unit} ${ingredient.item}`}</li>
                 })}
             </ul>
         </div>
@@ -82,7 +82,8 @@ export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
                         <div id="recipe-allergens" className="flex flex-col gap-2">
                             <h2>Allergens</h2>
                             <ul className="flex flex-row flex-wrap gap-2">
-                                {recipe.allergenCategories.map((al: string, i: number) => {
+                                {recipe.allergenCategories.length === 0 ? <p>none</p> :
+                                recipe.allergenCategories.map((al: string, i: number) => {
                                     const icon = allergenIcons.find(({ allergen }) => allergen === al);
                                     return <li id={`${icon?.allergen}-category`} key={i} className="flex flex-row">{icon?.icon} <Badge variant="secondary">{icon?.allergen}</Badge></li>
                                 })}
