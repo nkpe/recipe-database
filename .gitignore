@@ -33,6 +33,7 @@ build
 
 #Ignore environment variables
 .env
+venv
 
 # Logs
 logs
