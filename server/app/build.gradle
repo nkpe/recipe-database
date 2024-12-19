@@ -19,7 +19,7 @@ repositories {
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
-
+    
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:31.1-jre'
 
@@ -35,6 +35,7 @@ dependencies {
 
     // jython for integration Python into Java 
     implementation group: 'org.python', name: 'jython-slim', version: '2.7.4'
+
 
 }
 
