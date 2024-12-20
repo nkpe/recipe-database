@@ -13,7 +13,7 @@ An application to store recipes in a NoSQL database that can be queried to find 
 # Development
 ## How to run
 
-### Frontend 
+### Frontend
 
 - ```cd ui```
 - ```npm run dev```
@@ -27,11 +27,22 @@ An application to store recipes in a NoSQL database that can be queried to find 
 
 ``` gradle test ```
 
-## Technologies 
+## Technologies
+
 * React.js
 * Typescript
-* ShadCN 
+* ShadCN
 * TailwindCSS
 * Java
 * Gradle
 * MongoDB Atlas
+* Python
+
+## Python Gemini
+
+Using Gemini for recipe text.
+
+### Python dependancies required:
+
+```pip install grpcio==1.67.1``
+```pip install google.generativeai```
