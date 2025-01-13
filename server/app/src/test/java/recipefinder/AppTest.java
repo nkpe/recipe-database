@@ -19,7 +19,7 @@ class AppTest {
     @Test public void testRecipeAIHelper() {
         System.out.println("TEST RUNNING: AI Helper");
         Gemini gemini = new Gemini();
-        GeminiResult result = gemini.recipeAIHelper("Create recipe for Tuna Sandwich");
+        GeminiResult result = gemini.recipeAIHelper("https://realfood.tesco.com/recipes/pork-teriyaki-rice-and-broccoli.html");
         System.out.println(result.value);
         assertEquals(true, result.statusOk);
     }
