@@ -1,4 +1,4 @@
-package recipefinder;
+package recipefinder.database;
 
 import io.github.cdimascio.dotenv.Dotenv;
 
@@ -45,7 +45,7 @@ public class InsertData {
     }
 
     // should return List<Document>
-    static List<Document> recipeDataFromJSON () {
+    public static List<Document> recipeDataFromJSON () {
         JSONParser parser = new JSONParser();
 
         List<Document> recipesDocList = new ArrayList<Document>();

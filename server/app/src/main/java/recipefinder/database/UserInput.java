@@ -1,4 +1,4 @@
-package recipefinder;
+package recipefinder.database;
 
 import java.util.Scanner;
 

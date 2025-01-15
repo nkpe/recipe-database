@@ -1,4 +1,4 @@
-package recipefinder;
+package recipefinder.database;
 
 import io.github.cdimascio.dotenv.Dotenv;
 

@@ -3,6 +3,9 @@
  */
 package recipefinder;
 
+import recipefinder.database.Database;
+import recipefinder.database.UserInput;
+
 public class App {
     public static void main(String[] args) {
         Database database = new Database();
