@@ -23,6 +23,4 @@ class AppTest {
         System.out.println(result.value);
         assertEquals(true, result.statusOk);
     }
-
-
 }
