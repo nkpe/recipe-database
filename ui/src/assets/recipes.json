@@ -117,7 +117,7 @@
       "id": 3,
       "name": "Pork Teriyaki with Rice and Broccoli",
       "description": "A quick and flavorful stir-fry featuring tender pork, broccoli, and teriyaki sauce served over rice, perfect for a weeknight meal.",
-      "img": "./src/assets/imgs/pork-teriyaki-rice-broccoli.jpg",
+      "img": "./src/assets/imgs/teriyaki-pork.jpg",
       "ingredients": [
         { "quantity": 1, "unit": "tbsp", "item": "vegetable oil" },
         { "quantity": 2, "unit": "", "item": "pork loin steaks, trimmed and cut into strips" },
@@ -146,128 +146,409 @@
     },
     {
       "id": 4,
-      "name": "Chicken Curry", 
-      "description": "A warm and flavorful chicken curry simmered in coconut milk with aromatic spices.",
+      "name": "Easy Chicken Curry",
+      "description": "A simple and flavorful chicken curry enriched with creamy yogurt, perfect for family dinners.",
       "img": "./src/assets/imgs/curry-chicken.jpg",
-      "ingredients": ["chicken breasts", "coconut milk", "curry powder", "onions", "garlic", "ginger"], 
+      "ingredients": [
+        {
+          "quantity": 2,
+          "unit": "tbsp",
+          "item": "sunflower oil"
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "item": "onion, thinly sliced"
+        },
+        {
+          "quantity": 2,
+          "unit": "",
+          "item": "garlic cloves, crushed"
+        },
+        {
+          "quantity": 1,
+          "unit": "tbsp",
+          "item": "ginger, finely grated"
+        },
+        {
+          "quantity": 6,
+          "unit": "tbsp",
+          "item": "curry paste"
+        },
+        {
+          "quantity": 400,
+          "unit": "g",
+          "item": "chopped tomatoes"
+        },
+        {
+          "quantity": 2,
+          "unit": "tsp",
+          "item": "caster sugar"
+        },
+        {
+          "quantity": 4,
+          "unit": "",
+          "item": "chicken breasts, cut into chunks"
+        },
+        {
+          "quantity": 100,
+          "unit": "g",
+          "item": "Greek yogurt"
+        },
+        {
+          "quantity": 1,
+          "unit": "small bunch",
+          "item": "coriander, chopped"
+        },
+        {
+          "quantity": 150,
+          "unit": "g",
+          "item": "cooked rice, to serve"
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "item": "naan bread, to serve"
+        }
+      ],
       "instructions": [
-          "1. Sauté onions, garlic, and ginger in a pan until soft.",
-          "2. Add diced chicken and cook until browned.",
-          "3. Sprinkle curry powder and stir to coat the chicken.",
-          "4. Pour in coconut milk and bring to a simmer.",
-          "5. Cook for 20 minutes, or until sauce thickens."
-      ], 
-      "allergenCategories": [], 
+        "Heat the oil in a deep frying pan over medium heat and cook the onion for 5 minutes until softened.",
+        "Add the garlic and ginger, cooking for an additional minute.",
+        "Stir in the curry paste and cook for 2 minutes.",
+        "Add the chopped tomatoes and sugar, then season with salt. Bring to a simmer and cook for 10 minutes.",
+        "Add the chicken pieces, ensuring they are submerged in the sauce. Simmer for 15 minutes or until the chicken is cooked through.",
+        "Remove from heat and stir in the yogurt and most of the coriander.",
+        "Serve the curry over cooked rice with naan bread on the side, garnished with the remaining coriander."
+      ],
+      "allergenCategories": ["dairy"],
       "mealCategories": ["meat"],
-      "totalTime": 35,
-      "prepTime": 10,
+      "totalTime": 50,
+      "prepTime": 5,
       "featured": true,
-      "serves": 2,
-      "urlSource": ""
+      "serves": 4,
+      "urlSource": "https://www.bbcgoodfood.com/recipes/easy-chicken-curry"
     },
     {
       "id": 5,
-      "name": "Pasta Carbonara", 
-      "description": "A classic Italian pasta dish with creamy eggs, Parmesan, and crispy bacon.",
+      "name": "Spaghetti alla Carbonara",
+      "description": "A classic Italian pasta dish featuring spaghetti tossed in a creamy sauce made from eggs, Parmesan cheese, and pancetta.",
       "img": "./src/assets/imgs/pasta-carbonara.jpg",
-      "ingredients": ["pasta", "eggs", "Parmesan cheese", "bacon", "black pepper"], 
+      "ingredients": [
+        {
+          "quantity": 400,
+          "unit": "g",
+          "item": "spaghetti"
+        },
+        {
+          "quantity": 200,
+          "unit": "g",
+          "item": "pancetta or guanciale, diced"
+        },
+        {
+          "quantity": 2,
+          "unit": "",
+          "item": "large eggs"
+        },
+        {
+          "quantity": 50,
+          "unit": "g",
+          "item": "Parmesan cheese, grated"
+        },
+        {
+          "quantity": "",
+          "unit": "",
+          "item": "salt and freshly ground black pepper"
+        }
+      ],
       "instructions": [
-          "1. Boil pasta until al dente, then drain.",
-          "2. Cook bacon in a pan until crispy, then remove.",
-          "3. In a bowl, whisk eggs and Parmesan together.",
-          "4. Add hot pasta to the egg mixture and stir quickly.",
-          "5. Toss with bacon and black pepper before serving."
-      ], 
-      "allergenCategories": ["gluten", "eggs", "dairy"], 
+        "Bring a large pot of salted water to a boil and cook the spaghetti until al dente.",
+        "While the pasta cooks, heat a large skillet over medium heat and add the diced pancetta. Cook until crispy, then remove from heat.",
+        "In a bowl, whisk together the eggs and grated Parmesan cheese.",
+        "Once the pasta is done, reserve a cup of the pasta water and drain the rest.",
+        "Quickly add the hot pasta to the skillet with the pancetta. Pour in the egg and cheese mixture, tossing rapidly to create a creamy sauce. If the mixture is too thick, add some reserved pasta water to achieve the desired consistency.",
+        "Season with freshly ground black pepper and serve immediately."
+      ],
+      "allergenCategories": ["gluten", "eggs", "dairy"],
       "mealCategories": ["meat"],
-      "totalTime": 20,
+      "totalTime": 25,
       "prepTime": 10,
       "featured": true,
-      "serves": 2,
-      "urlSource": ""
+      "serves": 4,
+      "urlSource": "https://www.simplyrecipes.com/recipes/spaghetti_alla_carbonara/"
     },
     {
       "id": 6,
-      "name": "Pesto Pasta", 
-      "description": "A vibrant and fresh pasta tossed in basil pesto and topped with Parmesan.",
+      "name": "Pesto Pasta",
+      "description": "A simple and flavorful pasta dish tossed with homemade basil pesto sauce.",
       "img": "./src/assets/imgs/pasta-pesto.jpg",
-      "ingredients": ["Pasta", "pesto", "Parmesan cheese"], 
+      "ingredients": [
+        {
+          "quantity": 16,
+          "unit": "oz",
+          "item": "pasta"
+        },
+        {
+          "quantity": 2,
+          "unit": "cups",
+          "item": "fresh basil leaves"
+        },
+        {
+          "quantity": 1,
+          "unit": "cup",
+          "item": "Parmesan cheese, grated"
+        },
+        {
+          "quantity": 1,
+          "unit": "cup",
+          "item": "extra virgin olive oil"
+        },
+        {
+          "quantity": 0.33,
+          "unit": "cup",
+          "item": "pine nuts"
+        },
+        {
+          "quantity": 4,
+          "unit": "cloves",
+          "item": "garlic, minced"
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "quantity": 0.2,
+          "unit": "tsp",
+          "item": "black pepper, freshly ground"
+        }
+      ],
       "instructions": [
-          "1. Boil pasta until al dente, then drain.",
-          "2. In a bowl, toss pasta with pesto sauce.",
-          "3. Add a sprinkle of Parmesan cheese.",
-          "4. Mix to combine flavors.",
-          "5. Serve warm with extra Parmesan if desired."
-      ], 
-      "allergenCategories": ["gluten", "dairy", "nuts"], 
-      "mealCategories": ["veggie"],
-      "totalTime": 15,
-      "prepTime": 5,
-      "featured": true,
-      "serves": 2,
-      "urlSource": ""
-    },
-    {
-      "id": 7,
-      "name": "Avocado and Egg Salad", 
-      "description": "A light and nutritious salad featuring creamy avocado, boiled eggs, and mixed greens.",
-      "img": "./src/assets/imgs/salad-avocado-egg.jpg",
-      "ingredients": ["Avocado", "eggs", "mixed greens", "olive oil", "salt", "pepper"], 
-      "instructions": [
-          "1. Boil eggs to desired doneness, then peel and chop.",
-          "2. Slice avocado and add to a bowl with mixed greens.",
-          "3. Add chopped eggs to the bowl.",
-          "4. Drizzle with olive oil and season with salt and pepper.",
-          "5. Toss gently to combine."
-      ], 
-      "allergenCategories": ["eggs"], 
+        "Bring a large pot of lightly salted water to a boil. Cook pasta in the boiling water, stirring occasionally, until tender yet firm to the bite, about 8 to 10 minutes. Drain and transfer to a large bowl.",
+        "Combine basil leaves, Parmesan cheese, olive oil, pine nuts, garlic, salt, and black pepper in a food processor; blend until smooth.",
+        "Pour pesto over the pasta and toss to coat."
+      ],
+      "allergenCategories": ["gluten", "dairy", "nuts"],
       "mealCategories": ["veggie"],
       "totalTime": 20,
       "prepTime": 10,
+      "featured": false,
+      "serves": 8,
+      "urlSource": "https://www.allrecipes.com/recipe/11887/pesto-pasta/"
+    },
+    {
+      "id": 7,
+      "name": "Avocado Egg Salad",
+      "description": "A creamy and nutritious twist on the classic egg salad, incorporating ripe avocados and fresh herbs for enhanced flavor and health benefits.",
+      "img": "./src/assets/imgs/salad-avocado-egg.jpg",
+      "ingredients": [
+        {
+          "quantity": 6,
+          "unit": "",
+          "item": "large eggs"
+        },
+        {
+          "quantity": 2,
+          "unit": "",
+          "item": "ripe avocados, diced"
+        },
+        {
+          "quantity": 2,
+          "unit": "tbsp",
+          "item": "mayonnaise"
+        },
+        {
+          "quantity": 2,
+          "unit": "tbsp",
+          "item": "chopped chives"
+        },
+        {
+          "quantity": 1,
+          "unit": "tbsp",
+          "item": "chopped parsley"
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "Dijon mustard"
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "lemon juice"
+        },
+        {
+          "quantity": 0.5,
+          "unit": "tsp",
+          "item": "sea salt"
+        },
+        {
+          "quantity": 0.25,
+          "unit": "tsp",
+          "item": "black pepper"
+        }
+      ],
+      "instructions": [
+        "Place the eggs in a saucepan and cover with water. Bring to a boil, then remove from heat, cover, and let sit for 12 minutes.",
+        "Transfer the eggs to an ice water bath to cool, then peel and chop them.",
+        "In a mixing bowl, combine the chopped eggs, diced avocados, mayonnaise, chives, parsley, Dijon mustard, lemon juice, salt, and pepper.",
+        "Gently stir until all ingredients are well combined.",
+        "Serve immediately on bread, lettuce leaves, or as desired."
+      ],
+      "allergenCategories": ["eggs"],
+      "mealCategories": ["vegetarian", "salad"],
+      "totalTime": 20,
+      "prepTime": 10,
       "featured": true,
-      "serves": 2,
-      "urlSource": ""
+      "serves": 4,
+      "urlSource": "https://downshiftology.com/recipes/avocado-egg-salad/"
     },
     {
       "id": 8,
-      "name": "Butternut Squash Soup", 
-      "description": "A comforting, creamy soup made with roasted butternut squash and simple seasonings.",
+      "name": "Butternut Squash Soup",
+      "description": "A creamy and nourishing soup made with roasted butternut squash, fresh herbs, and ginger, capturing the essence of fall in every spoonful.",
       "img": "./src/assets/imgs/soup-butternutsquash.jpg",
-      "ingredients": ["Butternut squash", "vegetable broth", "onion", "garlic", "olive oil", "salt", "pepper"], 
+      "ingredients": [
+        {
+          "quantity": 3,
+          "unit": "pounds",
+          "item": "butternut squash, peeled and cubed"
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "item": "yellow onion, chopped"
+        },
+        {
+          "quantity": 3,
+          "unit": "cloves",
+          "item": "garlic, minced"
+        },
+        {
+          "quantity": 1,
+          "unit": "tbsp",
+          "item": "fresh sage, chopped"
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "fresh rosemary, chopped"
+        },
+        {
+          "quantity": 1,
+          "unit": "tbsp",
+          "item": "fresh ginger, minced"
+        },
+        {
+          "quantity": 2,
+          "unit": "tbsp",
+          "item": "extra-virgin olive oil"
+        },
+        {
+          "quantity": 4,
+          "unit": "cups",
+          "item": "vegetable broth"
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "quantity": 0.5,
+          "unit": "tsp",
+          "item": "freshly ground black pepper"
+        }
+      ],
       "instructions": [
-          "1. Preheat oven to 400°F (200°C) and roast cubed squash until soft.",
-          "2. Sauté onions and garlic in a pot with olive oil.",
-          "3. Add roasted squash to the pot with vegetable broth.",
-          "4. Simmer for 15 minutes, then blend until smooth.",
-          "5. Season with salt and pepper before serving."
-      ], 
-      "allergenCategories": [], 
+        "Heat the olive oil in a large pot over medium heat. Add the chopped onion and a pinch of salt, and sauté until translucent.",
+        "Add the cubed butternut squash and cook until it begins to soften.",
+        "Stir in the minced garlic, ginger, sage, and rosemary, and cook for a minute until fragrant.",
+        "Pour in the vegetable broth and bring to a boil. Reduce heat and let it simmer until the squash is tender, about 20 minutes.",
+        "Use an immersion blender to puree the soup until smooth. Alternatively, transfer the soup in batches to a blender and blend until smooth.",
+        "Season with additional salt and freshly ground black pepper to taste.",
+        "Serve hot, garnished with chopped parsley and pepitas if desired."
+      ],
+      "allergenCategories": [],
       "mealCategories": ["veggie", "starter"],
-      "totalTime": 55,
-      "prepTime": 15,
+      "totalTime": 45,
+      "prepTime": 10,
       "featured": true,
-      "serves": 2,
-      "urlSource": ""
+      "serves": 4,
+      "urlSource": "https://www.loveandlemons.com/butternut-squash-soup/"
     },
     {
       "id": 9,
-      "name": "Tiramisu", 
-      "description": "An indulgent Italian dessert featuring coffee-soaked ladyfingers layered with mascarpone cream.",
+      "name": "Best Ever Tiramisu",
+      "description": "A classic Italian dessert featuring layers of coffee-soaked sponge fingers, creamy mascarpone, and a dusting of cocoa powder.",
       "img": "./src/assets/imgs/tiramisu.jpg",
-      "ingredients": ["Ladyfingers", "mascarpone cheese", "coffee", "eggs", "sugar", "cocoa powder"], 
+      "ingredients": [
+        {
+          "quantity": 300,
+          "unit": "ml",
+          "item": "strong coffee, cooled"
+        },
+        {
+          "quantity": 175,
+          "unit": "ml",
+          "item": "Marsala wine"
+        },
+        {
+          "quantity": 2,
+          "unit": "",
+          "item": "large eggs, separated"
+        },
+        {
+          "quantity": 100,
+          "unit": "g",
+          "item": "caster sugar"
+        },
+        {
+          "quantity": 250,
+          "unit": "g",
+          "item": "mascarpone"
+        },
+        {
+          "quantity": 200,
+          "unit": "ml",
+          "item": "double cream"
+        },
+        {
+          "quantity": 175,
+          "unit": "g",
+          "item": "sponge fingers (savoiardi or ladyfingers)"
+        },
+        {
+          "quantity": 2,
+          "unit": "tsp",
+          "item": "Cocoa powder, for dusting"
+        },
+        {
+          "quantity": 25,
+          "unit": "g",
+          "item": "dark chocolate, grated (optional)"
+        }
+      ],
       "instructions": [
-          "1. Brew coffee and let it cool.",
-          "2. Dip ladyfingers in coffee and arrange a layer in a dish.",
-          "3. Whisk mascarpone, sugar, and eggs until smooth.",
-          "4. Spread mascarpone mixture over the ladyfingers.",
-          "5. Repeat layers and dust with cocoa powder. Chill before serving."
-      ], 
-      "allergenCategories": ["gluten", "milk", "lactose", "eggs"], 
-      "mealCategories": ["dessert", "veggie"],
+        "Mix the cooled coffee with the Marsala wine in a shallow dish.",
+        "Whisk the egg yolks and sugar together until pale and thick.",
+        "Beat in the mascarpone until smooth.",
+        "In a separate bowl, whisk the egg whites until stiff peaks form.",
+        "In another bowl, whip the double cream until thick.",
+        "Gently fold the whipped cream and egg whites into the mascarpone mixture.",
+        "Dip each sponge finger into the coffee mixture for a couple of seconds, then layer them in a dish.",
+        "Spread half the mascarpone mixture over the soaked sponge fingers.",
+        "Repeat the layers with the remaining sponge fingers and mascarpone mixture.",
+        "Cover and chill in the fridge for at least 4 hours, preferably overnight.",
+        "Before serving, dust with cocoa powder and sprinkle with grated dark chocolate if desired."
+      ],
+      "allergenCategories": ["gluten", "milk", "lactose", "eggs"],
+      "mealCategories": ["dessert"],
       "totalTime": 260,
       "prepTime": 20,
       "featured": true,
-      "serves": 2,
-      "urlSource": ""
+      "serves": 6,
+      "urlSource": "https://www.bbcgoodfood.com/recipes/best-ever-tiramisu"
     }
+    
 ]
