@@ -60,7 +60,7 @@ const RecipeInstructions = ({ recipe }: { recipe: Recipe }) => {
 };
 
 export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
-    console.log("CAT: ", recipe.mealCategories)
+    // console.log("CAT: ", recipe.mealCategories)
     return (
         <main className="flex flex-col gap-4">
             <div id="recipe-header" className="flex flex-col gap-4">
@@ -94,7 +94,7 @@ export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
                             <h2>Categories</h2>
                             <ul className="flex flex-row flex-wrap gap-2">
                                 {recipe.mealCategories.map((cat: string, i: number) => {
-                                    console.log("cat: ", cat);
+                                    // console.log("cat: ", cat);
                                     return <li key={i}><Badge variant="secondary" >{cat}</Badge></li>
                                 })}
                             </ul>

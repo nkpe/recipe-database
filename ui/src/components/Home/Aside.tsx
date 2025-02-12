@@ -9,7 +9,7 @@ export const Aside = ({recipes, allergenCategories} : {recipes: Recipe[], allerg
     const uniqueIngredients: Set<string> = new Set();
 
     recipes.forEach((r)=> {
-        console.log("r: ", r)
+        // console.log("r: ", r)
         r.ingredients.forEach((ingredient) => {
             uniqueIngredients.add(ingredient);
         })
