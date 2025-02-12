@@ -2,11 +2,13 @@ import { IngredientSelect } from "./IngredientSelect";
 import { CategoryIcons } from "./CategoryIcons";
 import { AllergySelect } from "./AllergySelect";
 
+import { RecipeIngredient } from "@/lib/recipeData";
 import { Recipe } from "@/lib/recipeData";
+
 import { Separator } from "@/components/ui/separator";
 
 export const Aside = ({recipes, allergenCategories} : {recipes: Recipe[], allergenCategories: string[]}) => {
-    const uniqueIngredients: Set<string> = new Set();
+    const uniqueIngredients: Set<RecipeIngredient> = new Set();
 
     recipes.forEach((r)=> {
         // console.log("r: ", r)

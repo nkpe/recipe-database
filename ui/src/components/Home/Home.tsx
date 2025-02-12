@@ -2,9 +2,6 @@ import { Recipe, allergenCategory } from "@/lib/recipeData";
 import { Aside } from "./Aside";
 import { FeaturedRecipes } from "./FeaturedRecipes";
 import RecentlyViewed from "./RecentlyViewed";
-import { useContext } from "react";
-import { GlobalContext } from "../global/Context";
-
 
 
 export const Home = ({recipes}: {recipes: Recipe[]}) => {

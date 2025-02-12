@@ -4,7 +4,7 @@ import recipesJson from "../assets/recipes.json";
 export const allergenCategory = ["gluten", "dairy", "nuts", "eggs", "soy"];
 export const mealCategory = ["starter", "meat", "fish", "veggie", "dessert", "healthy"];
 
-type RecipeIngredient = {
+export type RecipeIngredient = {
     quantity: number | string;
     unit: string;
     item: string;
