@@ -1,6 +1,8 @@
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Recipe } from "@/lib/recipeData";
 
+import { Link } from "react-router-dom";
+
 type ImgProps = {
     src: string,
     alt: string
@@ -22,9 +24,9 @@ const ScrollCards = ({ recipes }: { recipes: Recipe[] }) => {
                 <div className="flex w-max space-x-4 p-2">
                     {recipes.map((recipe, i) => {
                         return (
-                            <a href={`/recipe:${recipe.id}`} key={i}>
+                            <Link to={`/recipe:${recipe.id}`} key={i}>
                                 <ImgCard src={recipe.img} alt={recipe.name}></ImgCard>
-                            </a>)
+                            </Link>)
                     })}
                 </div>
                 <ScrollBar orientation="horizontal" />
