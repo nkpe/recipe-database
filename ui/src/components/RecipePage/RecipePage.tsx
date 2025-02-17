@@ -1,7 +1,6 @@
 import { Bean, Egg, Milk, Nut, Wheat } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge"
-
 import { Recipe } from "@/lib/recipeData";
 
 const allergenIcons = [
@@ -60,6 +59,7 @@ const RecipeInstructions = ({ recipe }: { recipe: Recipe }) => {
 };
 
 export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
+
     // console.log("CAT: ", recipe.mealCategories)
     return (
         <main className="flex flex-col gap-4">

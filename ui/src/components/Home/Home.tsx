@@ -1,8 +1,7 @@
 import { Recipe, allergenCategory } from "@/lib/recipeData";
 import { Aside } from "./Aside";
 import { FeaturedRecipes } from "./FeaturedRecipes";
-import RecentlyViewed from "./RecentlyViewed";
-
+import RecentlyViewedRecipes from "./RecentlyViewedRecipes";
 
 export const Home = ({recipes}: {recipes: Recipe[]}) => {
 
@@ -13,7 +12,7 @@ export const Home = ({recipes}: {recipes: Recipe[]}) => {
                 <FeaturedRecipes recipes={recipes} />
                 <p></p>
 
-                <RecentlyViewed />
+                <RecentlyViewedRecipes />
             </div>
         </main>
     )

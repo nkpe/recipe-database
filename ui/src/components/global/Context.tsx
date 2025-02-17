@@ -1,7 +1,4 @@
 import { createContext } from 'react';
 
-
-export const GlobalContext = createContext({
-    RecentlyViewedRecipes: [],
-});
+export const RecentlyViewedRecipesContext = createContext<string[]>([]);
 
