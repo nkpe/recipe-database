@@ -11,9 +11,15 @@ export const MainLayout = () => {
     const currentPath: string = location.pathname;
 
     useEffect(() => {
+        let recentPaths: string[] = recentlyViewedRecipes;
+
         if (currentPath.includes("/recipe:")){
-            setRecentlyViewedRecipes([currentPath , ...recentlyViewedRecipes])
+            if(recentlyViewedRecipes.includes(currentPath)){
+                recentPaths = recentlyViewedRecipes.filter(path => path !== currentPath);
+            }
+            setRecentlyViewedRecipes([currentPath , ...recentPaths])
         }
+        
         console.log("RECENTS STATE: ", [...recentlyViewedRecipes]);
     }, [currentPath]);
 
