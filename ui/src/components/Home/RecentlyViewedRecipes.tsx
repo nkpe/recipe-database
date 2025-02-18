@@ -3,13 +3,9 @@ import ScrollCards from "../global/ScrollCards";
 import { Recipe } from "@/lib/recipeData";
 import { RecentlyViewedRecipesContext } from "../global/Context";
 
-// const storeRecentlyViewed = () => {
-
-// }
-
-const RecentlyViewedRecipes = () => {
+const RecentlyViewedRecipes = ({recipes}: {recipes: Recipe[]}) => {
     const recentlyViewedRecipes = useContext(RecentlyViewedRecipesContext);
-    
+
     if (!recentlyViewedRecipes.length || !Array.isArray(recentlyViewedRecipes)){
         console.log("No recently viewed recipes");
         return

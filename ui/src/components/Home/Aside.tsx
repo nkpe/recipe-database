@@ -2,15 +2,15 @@ import { IngredientSelect } from "./IngredientSelect";
 import { CategoryIcons } from "./CategoryIcons";
 import { AllergySelect } from "./AllergySelect";
 
-import { RecipeIngredient } from "@/lib/recipeData";
+import { AllergenCategory, RecipeCatalog, RecipeIngredient } from "@/lib/recipeData";
 import { Recipe } from "@/lib/recipeData";
 
 import { Separator } from "@/components/ui/separator";
 
-export const Aside = ({recipes, allergenCategories} : {recipes: Recipe[], allergenCategories: string[]}) => {
-    const uniqueIngredients: Set<RecipeIngredient> = new Set();
+export const Aside = ({allRecipes, allergenCategories} : {allRecipes: RecipeCatalog, allergenCategories: AllergenCategory[]}) => {
+    const uniqueIngredients = allRecipes.getUniqueIngredients();
 
-    recipes.forEach((r)=> {
+    allRecipes.catalog.forEach((r)=> {
         // console.log("r: ", r)
         r.ingredients.forEach((ingredient) => {
             uniqueIngredients.add(ingredient);
