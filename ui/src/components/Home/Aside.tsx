@@ -2,9 +2,7 @@ import { IngredientSelect } from "./IngredientSelect";
 import { CategoryIcons } from "./CategoryIcons";
 import { AllergySelect } from "./AllergySelect";
 
-import { AllergenCategory, RecipeCatalog, RecipeIngredient } from "@/lib/recipeData";
-import { Recipe } from "@/lib/recipeData";
-
+import { AllergenCategory, RecipeCatalog } from "@/lib/recipeData";
 import { Separator } from "@/components/ui/separator";
 
 export const Aside = ({allRecipes, allergenCategories} : {allRecipes: RecipeCatalog, allergenCategories: AllergenCategory[]}) => {

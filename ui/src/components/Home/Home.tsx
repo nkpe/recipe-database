@@ -13,7 +13,7 @@ export const Home = ({allRecipes}: {allRecipes: RecipeCatalog}) => {
                 <FeaturedRecipes recipes={featuredRecipes} />
                 <p></p>
 
-                <RecentlyViewedRecipes />
+                <RecentlyViewedRecipes allRecipes={allRecipes}/>
             </div>
         </main>
     )

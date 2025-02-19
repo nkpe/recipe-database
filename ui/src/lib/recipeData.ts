@@ -22,7 +22,6 @@ export type RecipeIngredient = {
     unit: string;
     item: string;
 }
-
 interface RecipeProps {
     id: number;
     name: string;
