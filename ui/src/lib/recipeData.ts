@@ -8,6 +8,7 @@ export enum AllergenCategory {
     Eggs = "eggs", 
     Soy = "soy",
 }
+
 export enum MealCategory {
     Starter = "starter",
     Meat = "meat",
