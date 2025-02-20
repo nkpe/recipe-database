@@ -5,7 +5,7 @@ import { Home } from './components/Home/Home';
 import { RecipePage } from './components/RecipePage/RecipePage.tsx';
 import { MainLayout } from './components/MainLayout.tsx';
 
-const recipeRoutes = recipes.map(recipe => ({
+const recipeRoutes = recipes.catalog.map(recipe => ({
   path: `recipe:${recipe.id}`,
   element: <RecipePage recipe={recipe}/>,
 }))
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       { index: true,
-        element: <Home recipes={recipes}/>,
+        element: <Home allRecipes={recipes}/>,
       },
       ...recipeRoutes,
     ]
@@ -24,8 +24,6 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <RouterProvider router={router}/>
   )

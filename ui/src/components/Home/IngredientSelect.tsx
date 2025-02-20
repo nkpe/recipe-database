@@ -17,9 +17,10 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover";
 import { Label } from "@/components/ui/label";
+import { RecipeIngredient } from "@/lib/recipeData";
 
 
-export const IngredientSelect = ({ ingredientsList }: { ingredientsList: Set<string> }) => {
+export const IngredientSelect = ({ ingredientsList }: { ingredientsList: Set<RecipeIngredient> }) => {
     const [open, setOpen] = React.useState<boolean>(false);
     const [value, setValue] = React.useState<string>("");
 
@@ -41,17 +42,17 @@ export const IngredientSelect = ({ ingredientsList }: { ingredientsList: Set<str
                         <CommandEmpty>No ingredient found.</CommandEmpty>
                         <CommandGroup>
                             {Array.from(ingredientsList).map((ingredient) => (
-                                <CommandItem key={ingredient} value={ingredient} onSelect={(currentValue) => {
+                                <CommandItem key={ingredient.item} value={ingredient.item} onSelect={(currentValue) => {
                                     setValue(currentValue === value ? "" : currentValue)
                                     setOpen(false)
                                 }}
                                 >
                                     <Check className={cn(
                                         "mr-2 h-4 w-4",
-                                        value === ingredient ? "opacity-100" : "opacity-0"
+                                        value === ingredient.item ? "opacity-100" : "opacity-0"
                                     )}
                                     />
-                                    {ingredient}
+                                    {ingredient.item}
                                 </CommandItem>
                             ))}
                         </CommandGroup>

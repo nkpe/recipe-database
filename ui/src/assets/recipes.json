@@ -106,7 +106,7 @@
         "Combine the cooked pasta, chicken, and parsley with the sauce. Simmer gently to thicken before serving with a final squeeze of lemon."
       ],
       "allergenCategories": ["dairy", "gluten"],
-      "mealCategories": ["meat", "pasta"],
+      "mealCategories": ["meat"],
       "totalTime": 35,
       "prepTime": 10,
       "featured": true,
@@ -137,7 +137,7 @@
         "Serve over cooked jasmine rice."
       ],
       "allergenCategories": ["soy", "gluten"],
-      "mealCategories": ["meat", "stir-fry"],
+      "mealCategories": ["meat"],
       "totalTime": 20,
       "prepTime": 5,
       "featured": false,
@@ -396,7 +396,7 @@
         "Serve immediately on bread, lettuce leaves, or as desired."
       ],
       "allergenCategories": ["eggs"],
-      "mealCategories": ["vegetarian", "salad"],
+      "mealCategories": ["veggie"],
       "totalTime": 20,
       "prepTime": 10,
       "featured": true,
@@ -470,7 +470,7 @@
         "Serve hot, garnished with chopped parsley and pepitas if desired."
       ],
       "allergenCategories": [],
-      "mealCategories": ["veggie", "starter"],
+      "mealCategories": ["veggie"],
       "totalTime": 45,
       "prepTime": 10,
       "featured": true,
@@ -542,7 +542,7 @@
         "Cover and chill in the fridge for at least 4 hours, preferably overnight.",
         "Before serving, dust with cocoa powder and sprinkle with grated dark chocolate if desired."
       ],
-      "allergenCategories": ["gluten", "milk", "lactose", "eggs"],
+      "allergenCategories": ["gluten", "dairy", "eggs"],
       "mealCategories": ["dessert"],
       "totalTime": 260,
       "prepTime": 20,
