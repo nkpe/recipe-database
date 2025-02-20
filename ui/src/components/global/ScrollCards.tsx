@@ -16,13 +16,14 @@ const ImgCard = ({ src, alt }: ImgProps) => {
     )
 };
 
-const ScrollCards = ({ recipes }: { recipes: Recipe[] }) => {
+const ScrollCards = ({ recipes, title, scrollCardsId}: { recipes: Recipe[], title: string, scrollCardsId?: string }) => {
     return (
-        <div className="h-100 w-100">
-            <h1>Featured Recipes</h1>
-            <ScrollArea className="h-98 whitespace-nowrap rounded-md border-solid border-2 " >
+        <div className="h-100 w-100" id={scrollCardsId}>
+            <h1>{title}</h1>
+            <ScrollArea className="h-98 whitespace-nowrap rounded-md border-solid border-2" scrollHideDelay={1200} >
                 <div className="flex w-max space-x-4 p-2">
                     {recipes.map((recipe, i) => {
+                        console.log(`Recipe Card ID: ${scrollCardsId}`, recipe.id)
                         return (
                             <Link to={`/recipe:${recipe.id}`} key={i}>
                                 <ImgCard src={recipe.img} alt={recipe.name}></ImgCard>
