@@ -76,8 +76,10 @@ export class RecipeCatalog {
         this.catalog = catalog;
     }
 
-    getRecipesById(id: number[]): Recipe[] {
-        return this.catalog.filter(recipe => id.includes(recipe.id));
+    getRecipesById(ids: number[]): Recipe[] {
+        return ids.map((id) =>  
+            this.catalog.find(recipe => id === recipe.id)
+        ).filter((recipe) => recipe !== undefined);
     }
 
     getFeaturedRecipes(): Recipe[] {

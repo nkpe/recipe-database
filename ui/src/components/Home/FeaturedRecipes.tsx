@@ -25,6 +25,6 @@ export const FeaturedRecipes = ({recipes} : {recipes :Recipe[]}) => {
 
 
     return(
-        <ScrollCards recipes={featuredRecipesData}/>
+        <ScrollCards recipes={featuredRecipesData} title="Featured Recipes" />
     )
 };

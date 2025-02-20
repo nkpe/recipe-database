@@ -18,7 +18,7 @@ const RecentlyViewedRecipes = ({allRecipes}: {allRecipes: RecipeCatalog}) => {
     const recentlyViewedRecipes: Recipe[]= allRecipes.getRecipesById(recentlyViewRecipeIds)
 
     return (
-        <ScrollCards recipes={recentlyViewedRecipes}/>
+        <ScrollCards recipes={recentlyViewedRecipes} title="Recently Viewed" scrollCardsId="featured-recipes"/>
     );
 }
 
