@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+
 import { Recipe } from "@/lib/recipeData";
 
 import {
@@ -29,8 +30,10 @@ export const RecipePage = ({ recipe }: { recipe: Recipe }) => {
                 <div id="recipe-info-wrapper" className="flex flex-col gap-4">
                     <p>{recipe.description}</p>
                     <div id="recipe-categories" className="flex flex-col gap-4">
+
                         <RecipeAllergenInfo recipeAllergens={recipe.allergenCategories}/>
                         <RecipeMealCategories recipeMealCategories={recipe.mealCategories}/>
+
                     </div>
                 </div>
             </div>
