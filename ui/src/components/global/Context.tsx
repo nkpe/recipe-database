@@ -1,4 +1,7 @@
+import { RecipeCatalog, recipes } from '@/lib/recipeData';
 import { createContext } from 'react';
 
-export const RecentlyViewedRecipesContext = createContext<string[]>([]);
+const RecentlyViewedRecipesContext = createContext<string[]>([]);
+const RecipeCatalogContext = createContext<RecipeCatalog>(recipes)
 
+export {RecentlyViewedRecipesContext, RecipeCatalogContext}
