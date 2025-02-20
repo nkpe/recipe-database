@@ -1,7 +1,6 @@
 import { RecipeCatalog, AllergenCategory } from "@/lib/recipeData";
 import { Aside } from "./Aside";
 import { FeaturedRecipes } from "./FeaturedRecipes";
-import RecentlyViewedRecipes from "./RecentlyViewedRecipes";
 
 export const Home = ({allRecipes}: {allRecipes: RecipeCatalog}) => {
     const featuredRecipes = allRecipes.getFeaturedRecipes();
@@ -13,7 +12,6 @@ export const Home = ({allRecipes}: {allRecipes: RecipeCatalog}) => {
                 <FeaturedRecipes recipes={featuredRecipes} />
                 <p></p>
 
-                <RecentlyViewedRecipes allRecipes={allRecipes}/>
             </div>
         </main>
     )
