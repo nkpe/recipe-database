@@ -60,6 +60,10 @@
       --chart-5: 340 75% 55%;
     }
 
+    body {
+      @apply w-dvw;
+    }
+
     html {
       font-family: 'Poppins', sans-serif;
       font-weight: 400;
